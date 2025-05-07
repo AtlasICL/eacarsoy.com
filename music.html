@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emre's Music</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to the slideshow CSS file -->
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.ico" />
+    <!-- Apple Touch Icon for iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Emre Acarsoy's musical performances and compositions" />
+    <meta name="keywords"
+        content="music, piano, performance, classical music, compositions" />
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Les petites Mouettes",
+      "description": "A musical group led by Emre Acarsoy performing at various events",
+      "image": "https://acarsoy.co.uk/img/music/performance_emre_front.JPG",
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Emre Acarsoy",
+          "roleName": "Lead vocalist and pianist"
+        },
+        {
+          "@type": "Person",
+          "name": "Adrien",
+          "roleName": "Violinist"
+        }
+      ],
+      "event": [
+        {
+          "@type": "MusicEvent",
+          "name": "Tabernacle Show",
+          "location": {
+            "@type": "Place",
+            "name": "The Tabernacle",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Notting Hill",
+              "addressRegion": "London",
+              "addressCountry": "UK"
+            }
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.youtube.com/watch?v=0kUy7KP3cuo",
+            "description": "Watch part of our performance on YouTube"
+          }
+        },
+        {
+          "@type": "MusicEvent",
+          "name": "LFCG Talent Show 2022",
+          "location": {
+            "@type": "Place",
+            "name": "Lycée Francais Charles de Gaulle",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "London",
+              "addressCountry": "UK"
+            }
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://youtu.be/OHOeyzsR1tk?si=jXGMgadCvGwkuMNP&t=300",
+            "description": "Watch on YouTube"
+          }
+        },
+        {
+          "@type": "MusicEvent",
+          "name": "Outdoor live performance",
+          "location": {
+            "@type": "Place",
+            "name": "Lycée Francais Charles de Gaulle",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "London",
+              "addressCountry": "UK"
+            }
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.youtube.com/watch?v=ucAZTmLSkKo",
+            "description": "Watch on YouTube"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-left">
+                <h1>Emre Acarsoy</h1>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="docs.html">Docs</a>
+                <a href="music.html" aria-current="page">Music</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Music Section -->
+        <section id="music" class="info-section" aria-labelledby="music-heading">
+            <h2 id="music-heading">Music</h2>
+
+            <div class="section-intro">
+                <p>
+                    As a pianist and music theory enthusiast, performing music live has been a big part of my life. 
+                    From hosting shows to leading my own band (Les petites Mouettes), performing has helped me grow as a musician and as a person.
+                    Below you will find some highlights from my musical journey.
+                </p>
+            </div>
+
+            <!-- Tabernacle Show -->
+            <article class="project-item">
+                <div class="project-content">
+                    <h3>Tabernacle Show - Les petites Mouettes</h3>
+                    <a href="https://www.youtube.com/watch?v=0kUy7KP3cuo" target="_blank">Watch part of our performance on YouTube</a>
+                    <p>
+                        We had the great pleasure of performing to an audience of over 1000 people at the Tabernacle in Notting Hill. 
+                        Built in 1887 as a church, it is today a Grade II listed building. It was a great experience to perform in such a beautiful and historic venue.
+                    </p>
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-wrapper">
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 0)">&#10095;</a>
+                        
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <img src="img/music/final_speech_emre.JPG" alt="End of performance, Emre gives a thank you speech" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/performance_emre_front.JPG" alt="Performance (Emre singing)" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/performance_adrien.JPG" alt="Performance (Adrien on the violin)" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/final_celebrations.JPG" alt="End of performance final celebrations" loading="lazy" />
+                            </div>
+                        </div>
+                        
+                        <!-- Dots/circles for indication -->
+                        <div class="dots-container" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 0)"></span>
+                            <span class="dot" onclick="currentSlide(2, 0)"></span>
+                            <span class="dot" onclick="currentSlide(3, 0)"></span>
+                            <span class="dot" onclick="currentSlide(4, 0)"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- LFCG Talent Show 2022 -->
+            <article class="project-item">
+                <div class="project-content">
+                    <h3>Hosting the LFCG Talent Show - 2022 edition</h3>
+                    <a href="https://youtu.be/OHOeyzsR1tk?si=jXGMgadCvGwkuMNP&t=300" target="_blank">Watch on YouTube</a>
+                    <p>
+                        This was my first time hosting the LFCG Talent Show. 
+                        I love public speaking and performing, and being able to work closely with so many talented students along with the prestigious jury members was a great experience.
+                    </p>
+                    <p>
+                        On the second day of the show, my band Les petites Mouettes (The Little Seagulls) performed a couple of songs. Here are some photos from that evening.
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-wrapper">
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 1)">&#10095;</a>
+                        
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2022/final_emre_hosting.jpg" alt="Emre hosting the show" loading="lazy" />
+                            </div>
+                            
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2022/max_and_ryan.jpg" alt="Max and Ryan, the competition winners" loading="lazy" />
+                            </div>
+                            
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2022/emre_hosting_other_night.jpg" alt="Emre hosting the other night of the show" loading="lazy" />
+                            </div>
+                            
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2022/talent_show_programme.jpg" alt="Programme of the show" loading="lazy" />
+                            </div>
+                        </div>
+                        
+                        <!-- Dots/circles for indication -->
+                        <div class="dots-container" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 1)"></span>
+                            <span class="dot" onclick="currentSlide(2, 1)"></span>
+                            <span class="dot" onclick="currentSlide(3, 1)"></span>
+                            <span class="dot" onclick="currentSlide(4, 1)"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- LFCG Talent Show 2023 -->
+            <article class="project-item">
+                <div class="project-content">
+                    <h3>Hosting the LFCG Talent Show - 2023 edition</h3>
+                    <p>
+                        I was invited back to host the 2023 edition of the LFCG Talent Show. 
+                        The event was even more successful than the previous year, with a wide variety of talented performers and a packed audience.
+                    </p>
+                    
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-wrapper">
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 2)">&#10095;</a>
+                        
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2023/emre_hosting_2023.png" alt="Emre hosting the show" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2023/saults.png" alt="The band Saults" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/talent_show_2023/final_thanks.png" alt="Final thanks" loading="lazy" />
+                            </div>
+                        </div>
+                        
+                        <!-- Dots/circles for indication -->
+                        <div class="dots-container" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 2)"></span>
+                            <span class="dot" onclick="currentSlide(2, 2)"></span>
+                            <span class="dot" onclick="currentSlide(3, 2)"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Outdoor concert -->
+            <article class="project-item">
+                <div class="project-content">
+                    <h3>Outdoor live performance - Les petites Mouettes</h3>
+                    <a href="https://www.youtube.com/watch?v=ucAZTmLSkKo" target="_blank">Watch on YouTube</a>
+                    <p>
+                        This was a very fun and light-hearted performance at the Lycée Francais Charles de Gaulle by my band Les petites Mouettes.
+                        We performed several original songs and covers to an enthusiastic audience of students and teachers.
+                    </p>
+                    
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-wrapper">
+                        <!-- Navigation arrows -->
+                        <a class="prev" onclick="changeSlide(-1, 3)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1, 3)">&#10095;</a>
+                        
+                        <div class="slideshow-container">
+                            <div class="slide fade">
+                                <img src="img/music/outdoor/action_pic.png" alt="Emre in front of the large crowd" loading="lazy" />
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/music/outdoor/audience_photo.jpg" alt="Photo taken by an audience member" loading="lazy" />
+                            </div>
+                        </div>
+                        
+                        <!-- Dots/circles for indication -->
+                        <div class="dots-container" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1, 3)"></span>
+                            <span class="dot" onclick="currentSlide(2, 3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact: <span class="email-protect">e (dot) acarsoy (at) proton (dot) me</span></p>
+            <div class="social-links">
+                <a href="https://github.com/AtlasICL" target="_blank" class="social-btn" aria-label="GitHub Profile (opens in new tab)">GitHub</a>
+                <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" class="social-btn" aria-label="LinkedIn Profile (opens in new tab)">LinkedIn</a>
+            </div>
+            <p>© 2025 Emre Acarsoy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Slideshow JavaScript -->
+    <script src="js/slideshow.js"></script>
+</body>
+
+</html> 
