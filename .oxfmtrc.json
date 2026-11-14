@@ -1,0 +1,20 @@
+{
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "printWidth": 79,
+    "sortImports": true,
+    "overrides": [
+        {
+            "files": ["**/*.json"],
+            "options": {
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": ["**/*.md"],
+            "options": {
+                "printWidth": 79,
+                "proseWrap": "always"
+            }
+        }
+    ]
+}

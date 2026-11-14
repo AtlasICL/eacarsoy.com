@@ -1,0 +1,17 @@
+{
+    "name": "acarsoy-co-uk",
+    "private": true,
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy"
+    },
+    "devDependencies": {
+        "oxfmt": "^0.78.0",
+        "oxlint": "^1.93.0",
+        "wrangler": "^4.162.0"
+    },
+    "allowScripts": {
+        "esbuild@0.28.2": true,
+        "workerd@1.20261113.1": true
+    }
+}
