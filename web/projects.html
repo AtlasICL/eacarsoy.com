@@ -1,618 +1,1301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- Ensures proper rendering on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Emre Acarsoy</title>
-    <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="fonts/ibm-plex-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/hanken-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/jetbrains-mono-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <meta name="description" content="Emre Acarsoy's portfolio of computer science and engineering projects" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <meta
+      name="description"
+      content="Emre Acarsoy's portfolio of computer science and engineering projects"
+    />
     <meta property="og:title" content="Projects | Emre Acarsoy" />
-    <meta property="og:description" content="Portfolio of computer science and engineering projects" />
+    <meta
+      property="og:description"
+      content="Portfolio of computer science and engineering projects"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eacarsoy.com/projects" />
     <meta property="og:site_name" content="Emre Acarsoy" />
-    <meta property="og:image" content="https://eacarsoy.com/img/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://eacarsoy.com/img/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare." />
+    <meta
+      property="og:image:alt"
+      content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare."
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://eacarsoy.com/projects" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <header>
-        <nav aria-label="Main navigation">
-            <div class="nav-left">
-                <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
-                <div class="nav-social">
-                    <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="GitHub (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="LinkedIn (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-right">
-                <a href="/">Home</a>
-                <a href="/projects">Projects</a>
-                <a href="/music">Music</a>
-            </div>
-        </nav>
+      <nav aria-label="Main navigation">
+        <div class="nav-left">
+          <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
+          <div class="nav-social">
+            <a
+              href="https://github.com/AtlasICL"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="GitHub (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#github"></use></svg
+              ><span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emre-acarsoy"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="LinkedIn (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#linkedin"></use></svg
+              ><span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/music">Music</a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Projects Section -->
-        <section id="projects" class="info-section" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projects</h2>
+      <!-- Projects Section -->
+      <section
+        id="projects"
+        class="info-section"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading">Projects</h2>
 
-            <div class="project-grid">
-                <a href="#whatdidi" class="project-card" data-project="whatdidi" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--pad" aria-hidden="true">
-                        <div class="term term--whatdidi">
-                            <div class="term-bar"><span></span><span></span><span></span></div>
-<pre><code><span class="term-prompt">$</span> whatdidi --unique git 2
+        <div class="project-grid">
+          <a
+            href="#whatdidi"
+            class="project-card"
+            data-project="whatdidi"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--pad" aria-hidden="true">
+              <div class="term term--whatdidi">
+                <div class="term-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <pre><code><span class="term-prompt">$</span> whatdidi --unique git 2
 <span class="term-out">&gt; git push origin main
 &gt; git commit -m "feat: perf testing framework"</span>
 <span class="term-prompt">$</span> whatdidi curl 2
 <span class="term-out">&gt; curl -s https://sh.rustup.rs | sh
 &gt; curl -s https://api.github.com/users/AtlasICL | jq</span></code></pre>
-                        </div>
-                    </div>
-                    <span class="project-card-tags"><span>Bash</span><span>Zsh</span><span>CLI</span></span>
-                    <h3>whatdidi - command line history search tool</h3>
-                    <p>A command-line tool that searches your shell history, with unique filtering, persistent settings and self-updating.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
+              </div>
+            </div>
+            <span class="project-card-tags"
+              ><span>Bash</span><span>Zsh</span><span>CLI</span></span
+            >
+            <h3>whatdidi - command line history search tool</h3>
+            <p>
+              A command-line tool that searches your shell history, with unique
+              filtering, persistent settings and self-updating.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                <a href="#block-allocator" class="project-card" data-project="block-allocator" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--pad">
-                        <svg class="alloc-chart" viewBox="0 0 390 196" role="img"
-                    aria-label="Four containers with a 27 tonne limit. Dynamic programming fills each to 27.0 tonnes; a greedy approach reaches 24.2, 23.4, 23.3 and 22.7 tonnes.">
-                    <rect x="34" y="4" width="10" height="10" rx="2" class="ch-a" />
-                    <text x="49" y="13" class="ch-legend">Dynamic programming</text>
-                    <rect x="184" y="7" width="10" height="5" rx="1" class="ch-g" />
-                    <text x="199" y="13" class="ch-legend">Greedy</text>
-                    <line x1="334" y1="26" x2="334" y2="186" class="ch-limit" />
-                    <text x="334" y="196" class="ch-limit-label" text-anchor="middle">27 t limit</text>
-                    <text x="0" y="46" class="ch-label">#1</text>
-                    <rect x="34" y="34" width="153.4" height="16" rx="2" class="ch-a" />
-                    <rect x="189.4" y="34" width="144.6" height="16" rx="2" class="ch-b" />
-                    <text x="111.2" y="46" class="ch-in" text-anchor="middle">13.9 t</text>
-                    <text x="261.2" y="46" class="ch-in" text-anchor="middle">13.1 t</text>
-                    <rect x="34" y="54" width="268.9" height="6" rx="2" class="ch-g" />
-                    <text x="342" y="46" class="ch-val">27.0 t</text>
-                    <text x="342" y="61" class="ch-val-g">24.2 t</text>
-                    <text x="0" y="86" class="ch-label">#2</text>
-                    <rect x="34" y="74" width="150.1" height="16" rx="2" class="ch-a" />
-                    <rect x="186.1" y="74" width="147.9" height="16" rx="2" class="ch-b" />
-                    <text x="109.6" y="86" class="ch-in" text-anchor="middle">13.6 t</text>
-                    <text x="259.6" y="86" class="ch-in" text-anchor="middle">13.4 t</text>
-                    <rect x="34" y="94" width="260.0" height="6" rx="2" class="ch-g" />
-                    <text x="342" y="86" class="ch-val">27.0 t</text>
-                    <text x="342" y="101" class="ch-val-g">23.4 t</text>
-                    <text x="0" y="126" class="ch-label">#3</text>
-                    <rect x="34" y="114" width="114.6" height="16" rx="2" class="ch-a" />
-                    <rect x="150.6" y="114" width="183.4" height="16" rx="2" class="ch-b" />
-                    <text x="91.8" y="126" class="ch-in" text-anchor="middle">10.4 t</text>
-                    <text x="241.8" y="126" class="ch-in" text-anchor="middle">16.6 t</text>
-                    <rect x="34" y="134" width="258.9" height="6" rx="2" class="ch-g" />
-                    <text x="342" y="126" class="ch-val">27.0 t</text>
-                    <text x="342" y="141" class="ch-val-g">23.3 t</text>
-                    <text x="0" y="166" class="ch-label">#4</text>
-                    <rect x="34" y="154" width="120.1" height="16" rx="2" class="ch-a" />
-                    <rect x="156.1" y="154" width="177.9" height="16" rx="2" class="ch-b" />
-                    <text x="94.6" y="166" class="ch-in" text-anchor="middle">10.9 t</text>
-                    <text x="244.6" y="166" class="ch-in" text-anchor="middle">16.1 t</text>
-                    <rect x="34" y="174" width="252.2" height="6" rx="2" class="ch-g" />
-                    <text x="342" y="166" class="ch-val">27.0 t</text>
-                    <text x="342" y="181" class="ch-val-g">22.7 t</text>
-                </svg>
-                    </div>
-                    <span class="project-card-tags"><span>Python</span><span>NumPy</span><span>tkinter</span></span>
-                    <h3>Granite block allocator</h3>
-                    <p>A desktop tool that packs granite blocks into containers, loading each one as close to its weight limit as possible.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
+          <a
+            href="#block-allocator"
+            class="project-card"
+            data-project="block-allocator"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--pad">
+              <svg
+                class="alloc-chart"
+                viewBox="0 0 390 196"
+                role="img"
+                aria-label="Four containers with a 27 tonne limit. Dynamic programming fills each to 27.0 tonnes; a greedy approach reaches 24.2, 23.4, 23.3 and 22.7 tonnes."
+              >
+                <rect
+                  x="34"
+                  y="4"
+                  width="10"
+                  height="10"
+                  rx="2"
+                  class="ch-a"
+                />
+                <text x="49" y="13" class="ch-legend">
+                  Dynamic programming
+                </text>
+                <rect
+                  x="184"
+                  y="7"
+                  width="10"
+                  height="5"
+                  rx="1"
+                  class="ch-g"
+                />
+                <text x="199" y="13" class="ch-legend">Greedy</text>
+                <line x1="334" y1="26" x2="334" y2="186" class="ch-limit" />
+                <text
+                  x="334"
+                  y="196"
+                  class="ch-limit-label"
+                  text-anchor="middle"
+                >
+                  27 t limit
+                </text>
+                <text x="0" y="46" class="ch-label">#1</text>
+                <rect
+                  x="34"
+                  y="34"
+                  width="153.4"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="189.4"
+                  y="34"
+                  width="144.6"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="111.2" y="46" class="ch-in" text-anchor="middle">
+                  13.9 t
+                </text>
+                <text x="261.2" y="46" class="ch-in" text-anchor="middle">
+                  13.1 t
+                </text>
+                <rect
+                  x="34"
+                  y="54"
+                  width="268.9"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="46" class="ch-val">27.0 t</text>
+                <text x="342" y="61" class="ch-val-g">24.2 t</text>
+                <text x="0" y="86" class="ch-label">#2</text>
+                <rect
+                  x="34"
+                  y="74"
+                  width="150.1"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="186.1"
+                  y="74"
+                  width="147.9"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="109.6" y="86" class="ch-in" text-anchor="middle">
+                  13.6 t
+                </text>
+                <text x="259.6" y="86" class="ch-in" text-anchor="middle">
+                  13.4 t
+                </text>
+                <rect
+                  x="34"
+                  y="94"
+                  width="260.0"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="86" class="ch-val">27.0 t</text>
+                <text x="342" y="101" class="ch-val-g">23.4 t</text>
+                <text x="0" y="126" class="ch-label">#3</text>
+                <rect
+                  x="34"
+                  y="114"
+                  width="114.6"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="150.6"
+                  y="114"
+                  width="183.4"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="91.8" y="126" class="ch-in" text-anchor="middle">
+                  10.4 t
+                </text>
+                <text x="241.8" y="126" class="ch-in" text-anchor="middle">
+                  16.6 t
+                </text>
+                <rect
+                  x="34"
+                  y="134"
+                  width="258.9"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="126" class="ch-val">27.0 t</text>
+                <text x="342" y="141" class="ch-val-g">23.3 t</text>
+                <text x="0" y="166" class="ch-label">#4</text>
+                <rect
+                  x="34"
+                  y="154"
+                  width="120.1"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="156.1"
+                  y="154"
+                  width="177.9"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="94.6" y="166" class="ch-in" text-anchor="middle">
+                  10.9 t
+                </text>
+                <text x="244.6" y="166" class="ch-in" text-anchor="middle">
+                  16.1 t
+                </text>
+                <rect
+                  x="34"
+                  y="174"
+                  width="252.2"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="166" class="ch-val">27.0 t</text>
+                <text x="342" y="181" class="ch-val-g">22.7 t</text>
+              </svg>
+            </div>
+            <span class="project-card-tags"
+              ><span>Python</span><span>NumPy</span><span>tkinter</span></span
+            >
+            <h3>Granite block allocator</h3>
+            <p>
+              A desktop tool that packs granite blocks into containers, loading
+              each one as close to its weight limit as possible.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                <a href="#cpu-16bit" class="project-card" data-project="cpu-16bit" aria-haspopup="dialog">
-                    <div class="card-visual">
-                        <img src="img/projects/cpu_datapath.webp" alt="CPU datapath schematic: decoder, register file, ALU and flag generation" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>Digital Logic</span><span>RISC Assembly</span></span>
-                    <h3>Custom 16-bit CPU with pipelining and interrupts</h3>
-                    <p>A 16-bit RISC-style CPU built up from logic gates, with a 2-stage pipeline, hardware interrupts and hand-written assembly programs.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
+          <a
+            href="#cpu-16bit"
+            class="project-card"
+            data-project="cpu-16bit"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual">
+              <img
+                src="img/projects/cpu_datapath.webp"
+                alt="CPU datapath schematic: decoder, register file, ALU and flag generation"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>Digital Logic</span><span>RISC Assembly</span></span
+            >
+            <h3>Custom 16-bit CPU with pipelining and interrupts</h3>
+            <p>
+              A 16-bit RISC-style CPU built up from logic gates, with a 2-stage
+              pipeline, hardware interrupts and hand-written assembly programs.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                <a href="#setup-script" class="project-card" data-project="setup-script" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--pad" aria-hidden="true">
-                        <div class="term">
-                            <div class="term-bar"><span></span><span></span><span></span></div>
-<pre><code><span class="term-prompt">$</span> bash ~/dotfiles/setup.sh
+          <a
+            href="#setup-script"
+            class="project-card"
+            data-project="setup-script"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--pad" aria-hidden="true">
+              <div class="term">
+                <div class="term-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <pre><code><span class="term-prompt">$</span> bash ~/dotfiles/setup.sh
 <span class="term-ok">[INFO]</span> <span class="term-out">Installing java and maven...</span>
 <span class="term-ok">[INFO]</span> <span class="term-out">Installing neovim...</span>
 <span class="term-ok">[INFO]</span> <span class="term-out">Backing up current configs...</span>
 <span class="term-ok">[INFO]</span> <span class="term-out">Configuring JAVA_HOME...</span>
 <span class="term-done">[OK  ]</span> <span class="term-out">Done. You should restart your shell.</span></code></pre>
-                        </div>
-                    </div>
-                    <span class="project-card-tags"><span>Bash</span><span>macOS</span><span>Linux</span></span>
-                    <h3>Custom macOS/Linux setup script</h3>
-                    <p>A one-command script that turns a fresh macOS or Ubuntu/Debian machine into a ready-to-use development environment.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#cardgame" class="project-card" data-project="cardgame" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--pad" aria-hidden="true">
-                        <svg class="card-svg" viewBox="0 0 340 160">
-                            <text x="8" y="38" class="cv-label">Player 1</text>
-                            <line x1="66" y1="34" x2="248" y2="34" class="cv-lane" />
-                            <line x1="66" y1="34" x2="214" y2="34" class="cv-progress" />
-                            <circle cx="214" cy="34" r="5" class="cv-dot" />
-                            <text x="8" y="68" class="cv-label">Player 2</text>
-                            <line x1="66" y1="64" x2="248" y2="64" class="cv-lane" />
-                            <line x1="66" y1="64" x2="168" y2="64" class="cv-progress" />
-                            <circle cx="168" cy="64" r="5" class="cv-dot" />
-                            <text x="8" y="98" class="cv-label">Player 3</text>
-                            <line x1="66" y1="94" x2="248" y2="94" class="cv-lane" />
-                            <line x1="66" y1="94" x2="232" y2="94" class="cv-progress" />
-                            <circle cx="232" cy="94" r="5" class="cv-dot" />
-                            <text x="8" y="128" class="cv-label">Player 4</text>
-                            <line x1="66" y1="124" x2="248" y2="124" class="cv-lane" />
-                            <line x1="66" y1="124" x2="120" y2="124" class="cv-progress" />
-                            <circle cx="120" cy="124" r="5" class="cv-dot" />
-                            <line x1="252" y1="18" x2="252" y2="140" class="cv-barrier" />
-                            <text x="252" y="154" text-anchor="middle" class="cv-mono">CyclicBarrier</text>
-                            <path d="M262 79 h46" class="cv-next" />
-                            <path d="M302 73 l8 6 l-8 6" class="cv-next" />
-                            <text x="286" y="66" text-anchor="middle" class="cv-label">next round</text>
-                        </svg>
-                    </div>
-                    <span class="project-card-tags"><span>Java</span><span>Concurrency</span><span>JUnit</span></span>
-                    <h3>Multi-threaded game simulation in Java</h3>
-                    <p>A multi-threaded card game simulation with a custom cyclic barrier for thread synchronisation, fully unit tested.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#ml-fundamentals" class="project-card" data-project="ml-fundamentals" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--left">
-                        <img src="img/projects/t-sne-pca-visualisation.webp" alt="t-SNE and PCA plots of handwritten digit clusters" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>Python</span><span>scikit-learn</span></span>
-                    <h3>Fundamentals of machine learning</h3>
-                    <p>A logistic regression classifier for handwritten digits, exploring PCA, t-SNE and UMAP for dimensionality reduction.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#battleships" class="project-card" data-project="battleships" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--top">
-                        <img src="img/projects/battleships_gameplay.webp" alt="Battleships game board during play" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>Python</span><span>Flask</span></span>
-                    <h3>Web player vs AI battleships game</h3>
-                    <p>A web-based battleships game: place your ships interactively, then battle an AI opponent.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#lift-simulator" class="project-card" data-project="lift-simulator" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--top">
-                        <img src="img/projects/lift_simulator_demo_screenshot_1.webp" alt="Lift simulator window showing floors, waiting passengers and lift status" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>Python</span><span>tkinter</span></span>
-                    <h3>Custom lift simulator</h3>
-                    <p>A lift simulator with a GUI and customisable parameters such as lift capacity and number of floors.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#eee-rover" class="project-card" data-project="eee-rover" aria-haspopup="dialog">
-                    <div class="card-visual">
-                        <img src="img/projects/eee_rover.webp" alt="The team's rover: breadboard circuits, sensor coil and red wheels" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>Arduino</span><span>LTspice</span><span>Circuits</span></span>
-                    <h3>Electrical engineering group design project</h3>
-                    <p>A remote-controlled rover that detects infrared, radio and magnetic signals, from circuit design to Arduino code.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
-
-                <a href="#os-specific" class="project-card" data-project="os-specific" aria-haspopup="dialog">
-                    <div class="card-visual card-visual--contain">
-                        <img src="img/projects/os_mem_throughput.webp" alt="Memory throughput benchmark: containers near native, virtual machines well below" loading="lazy" />
-                    </div>
-                    <span class="project-card-tags"><span>LaTeX</span><span>Operating Systems</span></span>
-                    <h3>Why is software OS-specific?</h3>
-                    <p>A technical presentation on why applications get tied to one operating system, evaluating translation layers, containers and Electron as cross-platform solutions.</p>
-                    <span class="project-card-more">View details <span aria-hidden="true">&rarr;</span></span>
-                </a>
+              </div>
             </div>
+            <span class="project-card-tags"
+              ><span>Bash</span><span>macOS</span><span>Linux</span></span
+            >
+            <h3>Custom macOS/Linux setup script</h3>
+            <p>
+              A one-command script that turns a fresh macOS or Ubuntu/Debian
+              machine into a ready-to-use development environment.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-            <!-- Project detail modals (opened by clicking a card) -->
-            <!-- whatdidi -->
-            <dialog class="project-modal" id="project-whatdidi" aria-labelledby="whatdidi-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="whatdidi-title">whatdidi - command line history search tool</h3>
-                            <a href="https://github.com/AtlasICL/whatdidi" target="_blank" rel="noopener">
-                                View project on GitHub
-                            </a>
+          <a
+            href="#cardgame"
+            class="project-card"
+            data-project="cardgame"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--pad" aria-hidden="true">
+              <svg class="card-svg" viewBox="0 0 340 160">
+                <text x="8" y="38" class="cv-label">Player 1</text>
+                <line x1="66" y1="34" x2="248" y2="34" class="cv-lane" />
+                <line x1="66" y1="34" x2="214" y2="34" class="cv-progress" />
+                <circle cx="214" cy="34" r="5" class="cv-dot" />
+                <text x="8" y="68" class="cv-label">Player 2</text>
+                <line x1="66" y1="64" x2="248" y2="64" class="cv-lane" />
+                <line x1="66" y1="64" x2="168" y2="64" class="cv-progress" />
+                <circle cx="168" cy="64" r="5" class="cv-dot" />
+                <text x="8" y="98" class="cv-label">Player 3</text>
+                <line x1="66" y1="94" x2="248" y2="94" class="cv-lane" />
+                <line x1="66" y1="94" x2="232" y2="94" class="cv-progress" />
+                <circle cx="232" cy="94" r="5" class="cv-dot" />
+                <text x="8" y="128" class="cv-label">Player 4</text>
+                <line x1="66" y1="124" x2="248" y2="124" class="cv-lane" />
+                <line x1="66" y1="124" x2="120" y2="124" class="cv-progress" />
+                <circle cx="120" cy="124" r="5" class="cv-dot" />
+                <line x1="252" y1="18" x2="252" y2="140" class="cv-barrier" />
+                <text x="252" y="154" text-anchor="middle" class="cv-mono">
+                  CyclicBarrier
+                </text>
+                <path d="M262 79 h46" class="cv-next" />
+                <path d="M302 73 l8 6 l-8 6" class="cv-next" />
+                <text x="286" y="66" text-anchor="middle" class="cv-label">
+                  next round
+                </text>
+              </svg>
+            </div>
+            <span class="project-card-tags"
+              ><span>Java</span><span>Concurrency</span
+              ><span>JUnit</span></span
+            >
+            <h3>Multi-threaded game simulation in Java</h3>
+            <p>
+              A multi-threaded card game simulation with a custom cyclic
+              barrier for thread synchronisation, fully unit tested.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                            <p>
-                                A command-line utility that helps you find commands you've previously run.
-                                Searches your shell history (both persistent and current session) and retrieves matching
-                                commands based on a search term.
-                            </p>
-                            <ul>
-                                <li>Compatible with bash and zsh, macOS and Linux.</li>
-                                <li>Update and uninstall functionality.</li>
-                                <li>Comprehensive &amp; automated testing suite.</li>
-                                <li>Persistent user settings for default count and unique results.</li>
-                            </ul>
+          <a
+            href="#ml-fundamentals"
+            class="project-card"
+            data-project="ml-fundamentals"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--left">
+              <img
+                src="img/projects/t-sne-pca-visualisation.webp"
+                alt="t-SNE and PCA plots of handwritten digit clusters"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>Python</span><span>scikit-learn</span></span
+            >
+            <h3>Fundamentals of machine learning</h3>
+            <p>
+              A logistic regression classifier for handwritten digits,
+              exploring PCA, t-SNE and UMAP for dimensionality reduction.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                            <h4>Features / Example Usage</h4>
+          <a
+            href="#battleships"
+            class="project-card"
+            data-project="battleships"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--top">
+              <img
+                src="img/projects/battleships_gameplay.webp"
+                alt="Battleships game board during play"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>Python</span><span>Flask</span></span
+            >
+            <h3>Web player vs AI battleships game</h3>
+            <p>
+              A web-based battleships game: place your ships interactively,
+              then battle an AI opponent.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
 
-                            <p>Search for the last command you ran:</p>
-                            <pre><code>whatdidi curl
+          <a
+            href="#lift-simulator"
+            class="project-card"
+            data-project="lift-simulator"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--top">
+              <img
+                src="img/projects/lift_simulator_demo_screenshot_1.webp"
+                alt="Lift simulator window showing floors, waiting passengers and lift status"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>Python</span><span>tkinter</span></span
+            >
+            <h3>Custom lift simulator</h3>
+            <p>
+              A lift simulator with a GUI and customisable parameters such as
+              lift capacity and number of floors.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
+
+          <a
+            href="#eee-rover"
+            class="project-card"
+            data-project="eee-rover"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual">
+              <img
+                src="img/projects/eee_rover.webp"
+                alt="The team's rover: breadboard circuits, sensor coil and red wheels"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>Arduino</span><span>LTspice</span
+              ><span>Circuits</span></span
+            >
+            <h3>Electrical engineering group design project</h3>
+            <p>
+              A remote-controlled rover that detects infrared, radio and
+              magnetic signals, from circuit design to Arduino code.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
+
+          <a
+            href="#os-specific"
+            class="project-card"
+            data-project="os-specific"
+            aria-haspopup="dialog"
+          >
+            <div class="card-visual card-visual--contain">
+              <img
+                src="img/projects/os_mem_throughput.webp"
+                alt="Memory throughput benchmark: containers near native, virtual machines well below"
+                loading="lazy"
+              />
+            </div>
+            <span class="project-card-tags"
+              ><span>LaTeX</span><span>Operating Systems</span></span
+            >
+            <h3>Why is software OS-specific?</h3>
+            <p>
+              A technical presentation on why applications get tied to one
+              operating system, evaluating translation layers, containers and
+              Electron as cross-platform solutions.
+            </p>
+            <span class="project-card-more"
+              >View details <span aria-hidden="true">&rarr;</span></span
+            >
+          </a>
+        </div>
+
+        <!-- Project detail modals (opened by clicking a card) -->
+        <!-- whatdidi -->
+        <dialog
+          class="project-modal"
+          id="project-whatdidi"
+          aria-labelledby="whatdidi-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="whatdidi-title">
+                  whatdidi - command line history search tool
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/whatdidi"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View project on GitHub
+                </a>
+
+                <p>
+                  A command-line utility that helps you find commands you've
+                  previously run. Searches your shell history (both persistent
+                  and current session) and retrieves matching commands based on
+                  a search term.
+                </p>
+                <ul>
+                  <li>Compatible with bash and zsh, macOS and Linux.</li>
+                  <li>Update and uninstall functionality.</li>
+                  <li>Comprehensive &amp; automated testing suite.</li>
+                  <li>
+                    Persistent user settings for default count and unique
+                    results.
+                  </li>
+                </ul>
+
+                <h4>Features / Example Usage</h4>
+
+                <p>Search for the last command you ran:</p>
+                <pre><code>whatdidi curl
 &gt; curl -s https://sh.rustup.rs | sh</code></pre>
 
-                            <p>Search for the last <em>n</em> commands you ran:</p>
-                            <pre><code>whatdidi mvn 3
+                <p>Search for the last <em>n</em> commands you ran:</p>
+                <pre><code>whatdidi mvn 3
 &gt; mvn clean compile
 &gt; mvn test
 &gt; mvn clean compile exec:java "-Dexec.mainClass=simulator.ui.UserCLI"</code></pre>
 
-                            <p>Supports compound commands (e.g. search for <code>git push</code> specifically):</p>
-                            <pre><code>whatdidi "git push" 2
+                <p>
+                  Supports compound commands (e.g. search for
+                  <code>git push</code> specifically):
+                </p>
+                <pre><code>whatdidi "git push" 2
 &gt; git push
 &gt; git push -u origin main:refactoring</code></pre>
 
-                            <p>Supports commands prefixed with <code>sudo</code>:</p>
-                            <pre><code>whatdidi rm 2
+                <p>Supports commands prefixed with <code>sudo</code>:</p>
+                <pre><code>whatdidi rm 2
 &gt; rm foo.txt
 &gt; sudo rm bar.txt</code></pre>
 
-                            <p>Return only unique results with <code>-u</code> / <code>--unique</code>:</p>
-                            <pre><code>whatdidi -u git
+                <p>
+                  Return only unique results with <code>-u</code> /
+                  <code>--unique</code>:
+                </p>
+                <pre><code>whatdidi -u git
 &gt; git push origin main
 &gt; git commit -m "feat: performance testing framework"
 &gt; git status</code></pre>
 
-                            <p>Set the default result count:</p>
-                            <pre><code>whatdidi --set-default-count 3</code></pre>
+                <p>Set the default result count:</p>
+                <pre><code>whatdidi --set-default-count 3</code></pre>
 
-                            <p>Make unique results the default:</p>
-                            <pre><code>whatdidi --set-default-unique true</code></pre>
+                <p>Make unique results the default:</p>
+                <pre><code>whatdidi --set-default-unique true</code></pre>
 
-                            <p>Update to the latest version, or uninstall:</p>
-                            <pre><code>whatdidi --update
+                <p>Update to the latest version, or uninstall:</p>
+                <pre><code>whatdidi --update
 whatdidi --uninstall</code></pre>
-                        </div>
-                    </article>
-                </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- Setup script (dotfiles) -->
-            <dialog class="project-modal" id="project-setup-script" aria-labelledby="setup-script-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="setup-script-title">Custom macOS/Linux setup script</h3>
-                            <a href="https://github.com/AtlasICL/dotfiles" target="_blank" rel="noopener">View project on GitHub</a>
-                            <p>
-                                A Bash script that sets up a new macOS or Ubuntu/Debian machine with my full development
-                                environment and configuration files, in a single command.
-                            </p>
-                            <ul>
-                                <li>Detects the OS and installs packages with apt on Linux or Homebrew on macOS, translating package names between the two.</li>
-                                <li>Installs C/C++ compilers and debuggers, Java and Maven, NeoVim (with my config), tmux, and command-line tools such as fzf, ripgrep, fd and bat.</li>
-                                <li>Generates an SSH key pair if the machine doesn't already have one.</li>
-                                <li>Creates time-stamped backups of any config files it overwrites, and is safe to re-run.</li>
-                                <li>Adds custom shell functions, aliases and git helpers (e.g. rebase onto main, squash a branch).</li>
-                                <li>Shows a persistent progress bar at the bottom of the terminal while it runs.</li>
-                                <li>Optional install scripts for Haskell, Prolog and Swift.</li>
-                            </ul>
+        <!-- Setup script (dotfiles) -->
+        <dialog
+          class="project-modal"
+          id="project-setup-script"
+          aria-labelledby="setup-script-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="setup-script-title">
+                  Custom macOS/Linux setup script
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/dotfiles"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  A Bash script that sets up a new macOS or Ubuntu/Debian
+                  machine with my full development environment and
+                  configuration files, in a single command.
+                </p>
+                <ul>
+                  <li>
+                    Detects the OS and installs packages with apt on Linux or
+                    Homebrew on macOS, translating package names between the
+                    two.
+                  </li>
+                  <li>
+                    Installs C/C++ compilers and debuggers, Java and Maven,
+                    NeoVim (with my config), tmux, and command-line tools such
+                    as fzf, ripgrep, fd and bat.
+                  </li>
+                  <li>
+                    Generates an SSH key pair if the machine doesn't already
+                    have one.
+                  </li>
+                  <li>
+                    Creates time-stamped backups of any config files it
+                    overwrites, and is safe to re-run.
+                  </li>
+                  <li>
+                    Adds custom shell functions, aliases and git helpers (e.g.
+                    rebase onto main, squash a branch).
+                  </li>
+                  <li>
+                    Shows a persistent progress bar at the bottom of the
+                    terminal while it runs.
+                  </li>
+                  <li>
+                    Optional install scripts for Haskell, Prolog and Swift.
+                  </li>
+                </ul>
 
-                            <h4>Usage</h4>
-                            <pre><code>git clone https://github.com/AtlasICL/dotfiles ~/dotfiles
+                <h4>Usage</h4>
+                <pre><code>git clone https://github.com/AtlasICL/dotfiles ~/dotfiles
 bash ~/dotfiles/setup.sh</code></pre>
-                        </div>
-                    </article>
-                </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- Granite block allocator -->
-            <dialog class="project-modal" id="project-block-allocator" aria-labelledby="block-allocator-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="block-allocator-title">Granite block allocator</h3>
-                            <a href="https://github.com/AtlasICL/granite_block_allocator" target="_blank" rel="noopener">View project on GitHub</a>
-                            <p>
-                                A desktop application that optimises how granite blocks are allocated into containers.
-                                Given a CSV of block numbers and weights, it fills each container in turn as close to its
-                                maximum weight capacity as possible.
-                            </p>
-                            <ul>
-                                <li>Solves each container as a 0/1 knapsack problem using dynamic programming, vectorised with NumPy.</li>
-                                <li>Supports an optional maximum number of blocks per container, handled by adding a block-count dimension to the DP.</li>
-                                <li>Falls back to a greedy algorithm on very large inputs to keep run times short.</li>
-                                <li>tkinter GUI for loading the CSV, setting the container count, weight limit and block limit, and viewing the results.</li>
-                                <li>Unit test suite run automatically with GitHub Actions on every push and pull request.</li>
-                                <li>Packaged as a standalone Windows executable with PyInstaller.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </dialog>
+        <!-- Granite block allocator -->
+        <dialog
+          class="project-modal"
+          id="project-block-allocator"
+          aria-labelledby="block-allocator-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="block-allocator-title">Granite block allocator</h3>
+                <a
+                  href="https://github.com/AtlasICL/granite_block_allocator"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  A desktop application that optimises how granite blocks are
+                  allocated into containers. Given a CSV of block numbers and
+                  weights, it fills each container in turn as close to its
+                  maximum weight capacity as possible.
+                </p>
+                <ul>
+                  <li>
+                    Solves each container as a 0/1 knapsack problem using
+                    dynamic programming, vectorised with NumPy.
+                  </li>
+                  <li>
+                    Supports an optional maximum number of blocks per
+                    container, handled by adding a block-count dimension to the
+                    DP.
+                  </li>
+                  <li>
+                    Falls back to a greedy algorithm on very large inputs to
+                    keep run times short.
+                  </li>
+                  <li>
+                    tkinter GUI for loading the CSV, setting the container
+                    count, weight limit and block limit, and viewing the
+                    results.
+                  </li>
+                  <li>
+                    Unit test suite run automatically with GitHub Actions on
+                    every push and pull request.
+                  </li>
+                  <li>
+                    Packaged as a standalone Windows executable with
+                    PyInstaller.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- 16-bit CPU -->
-            <dialog class="project-modal" id="project-cpu-16bit" aria-labelledby="cpu-16bit-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="cpu-16bit-title">Custom 16-bit CPU with pipelining and interrupts</h3>
-                            <a href="https://github.com/AtlasICL/16-bit-cpu" target="_blank" rel="noopener">View project on GitHub</a>
-                            <p>
-                                Built a 16-bit RISC-style CPU in the Issie digital-logic simulator, starting from a half adder
-                                and finishing with a pipelined processor that handles interrupts and runs assembly programs I
-                                wrote for it.
-                            </p>
-                            <ul>
-                                <li>Built the arithmetic foundations from scratch: full adders, a ripple-carry adder/subtractor and an 8-operation ALU.</li>
-                                <li>Designed registers, counters, a ROM-driven message writer and a vending-machine state machine derived from Karnaugh maps.</li>
-                                <li>Designed the datapath's instruction-decode and ALU-control logic from truth tables, and found and fixed bugs in the provided blocks.</li>
-                                <li>Wrote the next-PC and conditional-branch logic, including signed and unsigned comparisons from the N, Z, C and V flags.</li>
-                                <li>Wrote 16- and 32-bit shift-and-add multiplication routines in assembly, optimised to branch on the carry flag.</li>
-                                <li>Analysed the 2-stage pipeline controller and interrupt handling with two interrupt sources.</li>
-                                <li>Verified every block cycle by cycle against a reference model.</li>
-                            </ul>
-                            <p>
-                                The EEP1 instruction set and reference model were provided by the Imperial College course team;
-                                the circuits, logic design and programs are my own work.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <img decoding="async" src="img/projects/cpu_datapath.webp" width="1200" height="961"
-                                alt="CPU datapath: decoder, register file, ALU, immediate extender and flag generation"
-                                loading="lazy" />
-                        </div>
-                    </article>
-                </div>
-            </dialog>
+        <!-- 16-bit CPU -->
+        <dialog
+          class="project-modal"
+          id="project-cpu-16bit"
+          aria-labelledby="cpu-16bit-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="cpu-16bit-title">
+                  Custom 16-bit CPU with pipelining and interrupts
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/16-bit-cpu"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  Built a 16-bit RISC-style CPU in the Issie digital-logic
+                  simulator, starting from a half adder and finishing with a
+                  pipelined processor that handles interrupts and runs assembly
+                  programs I wrote for it.
+                </p>
+                <ul>
+                  <li>
+                    Built the arithmetic foundations from scratch: full adders,
+                    a ripple-carry adder/subtractor and an 8-operation ALU.
+                  </li>
+                  <li>
+                    Designed registers, counters, a ROM-driven message writer
+                    and a vending-machine state machine derived from Karnaugh
+                    maps.
+                  </li>
+                  <li>
+                    Designed the datapath's instruction-decode and ALU-control
+                    logic from truth tables, and found and fixed bugs in the
+                    provided blocks.
+                  </li>
+                  <li>
+                    Wrote the next-PC and conditional-branch logic, including
+                    signed and unsigned comparisons from the N, Z, C and V
+                    flags.
+                  </li>
+                  <li>
+                    Wrote 16- and 32-bit shift-and-add multiplication routines
+                    in assembly, optimised to branch on the carry flag.
+                  </li>
+                  <li>
+                    Analysed the 2-stage pipeline controller and interrupt
+                    handling with two interrupt sources.
+                  </li>
+                  <li>
+                    Verified every block cycle by cycle against a reference
+                    model.
+                  </li>
+                </ul>
+                <p>
+                  The EEP1 instruction set and reference model were provided by
+                  the Imperial College course team; the circuits, logic design
+                  and programs are my own work.
+                </p>
+              </div>
+              <div class="project-images">
+                <img
+                  decoding="async"
+                  src="img/projects/cpu_datapath.webp"
+                  width="1200"
+                  height="961"
+                  alt="CPU datapath: decoder, register file, ALU, immediate extender and flag generation"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- CardGame -->
-            <dialog class="project-modal" id="project-cardgame" aria-labelledby="cardgame-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="cardgame-title">Multi-threaded game simulation in Java</h3>
-                            <a href="https://github.com/AtlasICL/cardgame" target="_blank" rel="noopener">View project on
-                                GitHub</a>
-                            <p>
-                                Multi-threaded card game simulation in Java, with custom cyclic barrier implementation for
-                                thread synchronisation.
-                            </p>
-                            <p>
-                                Full suite of unit tests using the JUnit framework, including a testing report available on the
-                                GitHub repo.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </dialog>
+        <!-- CardGame -->
+        <dialog
+          class="project-modal"
+          id="project-cardgame"
+          aria-labelledby="cardgame-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="cardgame-title">
+                  Multi-threaded game simulation in Java
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/cardgame"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  Multi-threaded card game simulation in Java, with custom
+                  cyclic barrier implementation for thread synchronisation.
+                </p>
+                <p>
+                  Full suite of unit tests using the JUnit framework, including
+                  a testing report available on the GitHub repo.
+                </p>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- Fundamentals of ML -->
-            <dialog class="project-modal" id="project-ml-fundamentals" aria-labelledby="ml-fundamentals-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="ml-fundamentals-title">Fundamentals of machine learning</h3>
-                            <a href="https://github.com/AtlasICL/ML_Fundamentals" target="_blank" rel="noopener">View project on
-                                GitHub</a>
-                            <p>
-                                Built a Python-based logistic regression classifier using scikit-learn to classify handwritten
-                                digits.
-                                Implemented advanced data cleaning, feature selection, and hyperparameter tuning to optimise
-                                results.
-                            </p>
-                            <p>
-                                Implemented dimensionality reduction using techniques such as PCA, t-SNE and UMAP.
-                                Discussed the nuances of these techniques for both data visualisation and preprocessing tasks.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <img decoding="async" src="img/projects/t-sne-pca-visualisation.webp" width="1189" height="590" alt="t-SNE visualisation of digit clusters"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-images">
-                            <div class="image-gallery">
-                                <div>
-                                    <img decoding="async" src="img/projects/logistic_regression_confusion_matrix.webp" width="528" height="547"
-                                        alt="Logistic Regression model confusion matrix" loading="lazy" />
-                                </div>
-                                <div>
-                                    <img decoding="async" src="img/projects/correlation_matrix.webp" width="784" height="836" alt="correlation matrix" loading="lazy" />
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+        <!-- Fundamentals of ML -->
+        <dialog
+          class="project-modal"
+          id="project-ml-fundamentals"
+          aria-labelledby="ml-fundamentals-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="ml-fundamentals-title">
+                  Fundamentals of machine learning
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/ML_Fundamentals"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  Built a Python-based logistic regression classifier using
+                  scikit-learn to classify handwritten digits. Implemented
+                  advanced data cleaning, feature selection, and hyperparameter
+                  tuning to optimise results.
+                </p>
+                <p>
+                  Implemented dimensionality reduction using techniques such as
+                  PCA, t-SNE and UMAP. Discussed the nuances of these
+                  techniques for both data visualisation and preprocessing
+                  tasks.
+                </p>
+              </div>
+              <div class="project-images">
+                <img
+                  decoding="async"
+                  src="img/projects/t-sne-pca-visualisation.webp"
+                  width="1189"
+                  height="590"
+                  alt="t-SNE visualisation of digit clusters"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-images">
+                <div class="image-gallery">
+                  <div>
+                    <img
+                      decoding="async"
+                      src="img/projects/logistic_regression_confusion_matrix.webp"
+                      width="528"
+                      height="547"
+                      alt="Logistic Regression model confusion matrix"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      decoding="async"
+                      src="img/projects/correlation_matrix.webp"
+                      width="784"
+                      height="836"
+                      alt="correlation matrix"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- Online Battleships Game -->
-            <dialog class="project-modal" id="project-battleships" aria-labelledby="battleships-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="battleships-title">Web player vs AI battleships game</h3>
-                            <a href="https://github.com/AtlasICL/battleships_web" target="_blank" rel="noopener">View project on
-                                GitHub</a>
-                            <p>
-                                Web-based battleships game. Users place their ships interactively, and battle an AI.<br> During
-                                gameplay, side-by-side boards track both the user's square and the enemy's.
-                            </p>
-                            <p>
-                                The project was built in Python using the Flask framework.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <div class="image-gallery">
-                                <img decoding="async" src="img/projects/battleships_placement.webp" width="1200" height="999" alt="Battleships placement" loading="lazy" />
-                                <img decoding="async" src="img/projects/battleships_gameplay.webp" width="1200" height="1086" alt="Battleships gameplay" loading="lazy" />
-                            </div>
-                        </div>
-                    </article>
+        <!-- Online Battleships Game -->
+        <dialog
+          class="project-modal"
+          id="project-battleships"
+          aria-labelledby="battleships-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="battleships-title">
+                  Web player vs AI battleships game
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/battleships_web"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  Web-based battleships game. Users place their ships
+                  interactively, and battle an AI.<br />
+                  During gameplay, side-by-side boards track both the user's
+                  square and the enemy's.
+                </p>
+                <p>
+                  The project was built in Python using the Flask framework.
+                </p>
+              </div>
+              <div class="project-images">
+                <div class="image-gallery">
+                  <img
+                    decoding="async"
+                    src="img/projects/battleships_placement.webp"
+                    width="1200"
+                    height="999"
+                    alt="Battleships placement"
+                    loading="lazy"
+                  />
+                  <img
+                    decoding="async"
+                    src="img/projects/battleships_gameplay.webp"
+                    width="1200"
+                    height="1086"
+                    alt="Battleships gameplay"
+                    loading="lazy"
+                  />
                 </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- Lift Simulator -->
-            <dialog class="project-modal" id="project-lift-simulator" aria-labelledby="lift-simulator-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="lift-simulator-title">Custom lift simulator</h3>
-                            <a href="https://github.com/AtlasICL/lift_simulator" target="_blank" rel="noopener">View project on
-                                GitHub</a>
-                            <p>
-                                Built a custom lift simulator in Python. Features a GUI and customisable parameters such as lift
-                                capacity, number of floors.
-                            </p>
-                            <p>
-                                The project uses the tkinter library for the GUI.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <div class="image-gallery">
-                                <img decoding="async" src="img/projects/lift_simulator_demo_screenshot_1.webp" width="865" height="954" alt="Lift simulator main interface"
-                                    loading="lazy" />
-                                <img decoding="async" src="img/projects/lift_simulator_demo_screenshot_2.webp" width="865" height="954"
-                                    alt="Lift simulator configuration screen" loading="lazy" />
-                            </div>
-                        </div>
-                    </article>
+        <!-- Lift Simulator -->
+        <dialog
+          class="project-modal"
+          id="project-lift-simulator"
+          aria-labelledby="lift-simulator-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="lift-simulator-title">Custom lift simulator</h3>
+                <a
+                  href="https://github.com/AtlasICL/lift_simulator"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  Built a custom lift simulator in Python. Features a GUI and
+                  customisable parameters such as lift capacity, number of
+                  floors.
+                </p>
+                <p>The project uses the tkinter library for the GUI.</p>
+              </div>
+              <div class="project-images">
+                <div class="image-gallery">
+                  <img
+                    decoding="async"
+                    src="img/projects/lift_simulator_demo_screenshot_1.webp"
+                    width="865"
+                    height="954"
+                    alt="Lift simulator main interface"
+                    loading="lazy"
+                  />
+                  <img
+                    decoding="async"
+                    src="img/projects/lift_simulator_demo_screenshot_2.webp"
+                    width="865"
+                    height="954"
+                    alt="Lift simulator configuration screen"
+                    loading="lazy"
+                  />
                 </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- EEE Year 1 Project -->
-            <dialog class="project-modal" id="project-eee-rover" aria-labelledby="eee-rover-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="eee-rover-title">Electrical engineering group design project</h3>
-                            <a href="https://github.com/AtlasICL/EE-Design-Project-Report" target="_blank" rel="noopener">View
-                                report on GitHub</a>
-                            <p>
-                                Built a remote-controlled rover capable of detecting infrared signals, measuring frequency,
-                                detecting radio signals, and sensing magnetic field polarity.
-                            </p>
-                            <p>
-                                Designed and implemented a filtering and amplification circuit for infrared signal detection
-                                through
-                                a phototransistor.
-                            </p>
-                            <p>
-                                Simulated the design in LT Spice and prototyped the circuit on a breadboard.
-                            </p>
-                            <p>
-                                Developed and implemented Arduino code to digitally interface with the infrared detection
-                                circuit.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <div class="image-gallery">
-                                <img decoding="async" src="img/projects/eee_report_toc_page1.webp" width="927" height="1200" alt="Project report T.O.C. page 1"
-                                    loading="lazy" />
-                                <img decoding="async" src="img/projects/eee_report_toc_page2.webp" width="927" height="1200" alt="Project report T.O.C. page 2"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                    </article>
+        <!-- EEE Year 1 Project -->
+        <dialog
+          class="project-modal"
+          id="project-eee-rover"
+          aria-labelledby="eee-rover-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="eee-rover-title">
+                  Electrical engineering group design project
+                </h3>
+                <a
+                  href="https://github.com/AtlasICL/EE-Design-Project-Report"
+                  target="_blank"
+                  rel="noopener"
+                  >View report on GitHub</a
+                >
+                <p>
+                  Built a remote-controlled rover capable of detecting infrared
+                  signals, measuring frequency, detecting radio signals, and
+                  sensing magnetic field polarity.
+                </p>
+                <p>
+                  Designed and implemented a filtering and amplification
+                  circuit for infrared signal detection through a
+                  phototransistor.
+                </p>
+                <p>
+                  Simulated the design in LT Spice and prototyped the circuit
+                  on a breadboard.
+                </p>
+                <p>
+                  Developed and implemented Arduino code to digitally interface
+                  with the infrared detection circuit.
+                </p>
+              </div>
+              <div class="project-images">
+                <div class="image-gallery">
+                  <img
+                    decoding="async"
+                    src="img/projects/eee_report_toc_page1.webp"
+                    width="927"
+                    height="1200"
+                    alt="Project report T.O.C. page 1"
+                    loading="lazy"
+                  />
+                  <img
+                    decoding="async"
+                    src="img/projects/eee_report_toc_page2.webp"
+                    width="927"
+                    height="1200"
+                    alt="Project report T.O.C. page 2"
+                    loading="lazy"
+                  />
                 </div>
-            </dialog>
+              </div>
+            </article>
+          </div>
+        </dialog>
 
-            <!-- OS-specific software presentation -->
-            <dialog class="project-modal" id="project-os-specific" aria-labelledby="os-specific-title">
-                <button type="button" class="modal-close" aria-label="Close project details">&times;</button>
-                <div class="modal-body">
-                    <article class="project-item">
-                        <div class="project-content">
-                            <h3 id="os-specific-title">Why is software OS-specific?</h3>
-                            <a href="https://github.com/AtlasICL/os-specific-software" target="_blank" rel="noopener">View project on GitHub</a>
-                            <p>
-                                A technical presentation, built in LaTeX Beamer and given at the University of Exeter, on why
-                                applications like Adobe Photoshop are tied to one operating system, and what developers can do
-                                about it.
-                            </p>
-                            <ul>
-                                <li>Traces OS lock-in to its technical causes: different system call interfaces, and graphics APIs that only run on some platforms (DirectX, Metal, Vulkan, OpenGL).</li>
-                                <li>Sets out an evaluation framework from both the user's point of view (stability, performance, features, updates) and the developer's (development time, expertise needed, maintenance).</li>
-                                <li>Applies it to three real-world approaches: translation layers (Wine / Proton), virtualisation and containerisation (Docker, Podman), and Electron.</li>
-                                <li>Uses published benchmark data (sysbench and AMD STREAM) to compare container and virtual machine performance against native.</li>
-                                <li>Every claim is cited, with 25 sources in IEEE style, from textbooks and peer-reviewed papers to official documentation.</li>
-                            </ul>
-                            <p>
-                                The conclusion: there is no universal solution. Each approach trades performance, portability and
-                                developer effort against each other, and the right choice depends on the workload and the team.
-                            </p>
-                        </div>
-                        <div class="project-images">
-                            <div class="image-gallery">
-                                <img decoding="async" src="img/projects/os_mem_throughput.webp" width="922" height="787"
-                                    alt="Memory throughput benchmark: containers near 100% of native, virtual machines 57-71%"
-                                    loading="lazy" />
-                                <img decoding="async" src="img/projects/os_stream_benchmark.webp" width="888" height="802"
-                                    alt="STREAM benchmark: Docker about 99.2% of native, virtual machines about 96.5%"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                    </article>
+        <!-- OS-specific software presentation -->
+        <dialog
+          class="project-modal"
+          id="project-os-specific"
+          aria-labelledby="os-specific-title"
+        >
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Close project details"
+          >
+            &times;
+          </button>
+          <div class="modal-body">
+            <article class="project-item">
+              <div class="project-content">
+                <h3 id="os-specific-title">Why is software OS-specific?</h3>
+                <a
+                  href="https://github.com/AtlasICL/os-specific-software"
+                  target="_blank"
+                  rel="noopener"
+                  >View project on GitHub</a
+                >
+                <p>
+                  A technical presentation, built in LaTeX Beamer and given at
+                  the University of Exeter, on why applications like Adobe
+                  Photoshop are tied to one operating system, and what
+                  developers can do about it.
+                </p>
+                <ul>
+                  <li>
+                    Traces OS lock-in to its technical causes: different system
+                    call interfaces, and graphics APIs that only run on some
+                    platforms (DirectX, Metal, Vulkan, OpenGL).
+                  </li>
+                  <li>
+                    Sets out an evaluation framework from both the user's point
+                    of view (stability, performance, features, updates) and the
+                    developer's (development time, expertise needed,
+                    maintenance).
+                  </li>
+                  <li>
+                    Applies it to three real-world approaches: translation
+                    layers (Wine / Proton), virtualisation and containerisation
+                    (Docker, Podman), and Electron.
+                  </li>
+                  <li>
+                    Uses published benchmark data (sysbench and AMD STREAM) to
+                    compare container and virtual machine performance against
+                    native.
+                  </li>
+                  <li>
+                    Every claim is cited, with 25 sources in IEEE style, from
+                    textbooks and peer-reviewed papers to official
+                    documentation.
+                  </li>
+                </ul>
+                <p>
+                  The conclusion: there is no universal solution. Each approach
+                  trades performance, portability and developer effort against
+                  each other, and the right choice depends on the workload and
+                  the team.
+                </p>
+              </div>
+              <div class="project-images">
+                <div class="image-gallery">
+                  <img
+                    decoding="async"
+                    src="img/projects/os_mem_throughput.webp"
+                    width="922"
+                    height="787"
+                    alt="Memory throughput benchmark: containers near 100% of native, virtual machines 57-71%"
+                    loading="lazy"
+                  />
+                  <img
+                    decoding="async"
+                    src="img/projects/os_stream_benchmark.webp"
+                    width="888"
+                    height="802"
+                    alt="STREAM benchmark: Docker about 99.2% of native, virtual machines about 96.5%"
+                    loading="lazy"
+                  />
                 </div>
-            </dialog>
-        </section>
+              </div>
+            </article>
+          </div>
+        </dialog>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="GitHub (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="LinkedIn (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                </a>
-            </div>
-            <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="social-links">
+          <a
+            href="https://github.com/AtlasICL"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="GitHub (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#github"></use></svg
+            ><span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emre-acarsoy"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="LinkedIn (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#linkedin"></use></svg
+            ><span>LinkedIn</span>
+          </a>
         </div>
+        <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      </div>
     </footer>
-
 
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
     <script src="js/projects.js" defer></script>
-</body>
-
+  </body>
 </html>

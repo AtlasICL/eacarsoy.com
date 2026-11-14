@@ -2,205 +2,213 @@
  * Main wrapper contains everything including navigation controls and indicators
  */
 .slideshow-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 200px; /* Prevents layout shift during loading */
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px; /* Prevents layout shift during loading */
 }
 
 /* Section intro for context above slideshows */
 .section-intro {
-    max-width: 900px;
-    margin: 0 auto 40px;
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: var(--text-color-light);
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color-light);
 }
 
 .section-intro p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Inner container for actual slide content */
 .slideshow-container {
-    width: 60%; /* Fixed width so frame doesn't shrink with portrait images */
-    position: relative;
-    margin: auto;
-    background-color: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    display: grid;
-    place-items: center;
-    padding: 4px;
+  width: 60%; /* Fixed width so frame doesn't shrink with portrait images */
+  position: relative;
+  margin: auto;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  padding: 4px;
 }
 
 /* Individual slide panels - all overlap in same grid cell */
 .slide {
-    grid-row: 1;
-    grid-column: 1;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-    visibility: hidden;
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  visibility: hidden;
 }
 
 /* Image containment rules to maintain aspect ratio */
 .slideshow-wrapper .slide img {
-    max-width: 100%;
-    max-height: 60vh;
-    height: auto;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+  max-width: 100%;
+  max-height: 60vh;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .slideshow-wrapper .slide img:hover {
-    transform: none;
-    box-shadow: none;
+  transform: none;
+  box-shadow: none;
 }
 
 /* Show first slide by default before JS initialization */
 .slide:first-child {
-    visibility: visible;
+  visibility: visible;
 }
 
 /* Navigation arrow buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    border-radius: 50%;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    /* Reset button defaults */
-    appearance: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    text-decoration: none;
-    outline: none;
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Reset button defaults */
+  appearance: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  text-decoration: none;
+  outline: none;
 }
 
 /* Position controls on opposite sides */
 .prev {
-    left: 10px;
+  left: 10px;
 }
 
 .next {
-    right: 10px;
+  right: 10px;
 }
 
 /* Hover effects for arrow controls */
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--primary-color);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--primary-color);
 }
 
 /* Navigation dots container */
 .dots-container {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Individual navigation dots */
 .dot {
-    /* Reset button defaults (dots are buttons so they work with the keyboard) */
-    appearance: none;
-    border: none;
-    padding: 0;
-    vertical-align: middle;
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: var(--dot-color);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  /* Reset button defaults (dots are buttons so they work with the keyboard) */
+  appearance: none;
+  border: none;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 /* Active/hover state for dots */
-.active-dot, .dot:hover {
-    background-color: var(--primary-color);
+.active-dot,
+.dot:hover {
+  background-color: var(--primary-color);
 }
 
 /* Animation for slide transitions */
 .slide.active {
-    visibility: visible;
-    animation: fade 0.4s ease-out;
+  visibility: visible;
+  animation: fade 0.4s ease-out;
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Mobile responsiveness */
 @media only screen and (max-width: 768px) {
-    .slideshow-wrapper {
-        max-width: 90%;
-        min-height: 250px;
-    }
+  .slideshow-wrapper {
+    max-width: 90%;
+    min-height: 250px;
+  }
 
-    .slideshow-container {
-        width: 85%; /* Wider container on mobile for better visibility */
-        min-height: 0;
-    }
+  .slideshow-container {
+    width: 85%; /* Wider container on mobile for better visibility */
+    min-height: 0;
+  }
 
-    /* Smaller controls for mobile screens */
-    .prev, .next {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 16px;
-    }
+  /* Smaller controls for mobile screens */
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
 
-    /* Smaller dots for mobile */
-    .dot {
-        height: 8px;
-        width: 8px;
-    }
+  /* Smaller dots for mobile */
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
 
-    .slideshow-wrapper .slide img {
-        max-height: 50vh;
-    }
+  .slideshow-wrapper .slide img {
+    max-height: 50vh;
+  }
 }
 /* Keyboard focus styles */
 .slideshow-wrapper:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 4px;
-    border-radius: var(--radius);
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+  border-radius: var(--radius);
 }
 
 .prev:focus-visible,
 .next:focus-visible,
 .dot:focus-visible {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }

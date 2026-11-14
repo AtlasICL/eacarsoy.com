@@ -1,294 +1,549 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- Ensures proper rendering on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emre Acarsoy | Software Engineer</title>
-    <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="fonts/ibm-plex-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/hanken-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/jetbrains-mono-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-    <meta name="description"
-        content="Emre Acarsoy: computer science student, personal portfolio showcasing computer science and software engineering skills" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <meta
+      name="description"
+      content="Emre Acarsoy: computer science student, personal portfolio showcasing computer science and software engineering skills"
+    />
     <meta property="og:title" content="Emre Acarsoy | Software Engineer" />
-    <meta property="og:description" content="Computer science student portfolio showcasing software engineering skills and projects" />
+    <meta
+      property="og:description"
+      content="Computer science student portfolio showcasing software engineering skills and projects"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eacarsoy.com/" />
     <meta property="og:site_name" content="Emre Acarsoy" />
-    <meta property="og:image" content="https://eacarsoy.com/img/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://eacarsoy.com/img/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare." />
+    <meta
+      property="og:image:alt"
+      content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare."
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://eacarsoy.com/" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <header>
-        <nav aria-label="Main navigation">
-            <div class="nav-left">
-                <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
-                <div class="nav-social">
-                    <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="GitHub (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="LinkedIn (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-right">
-                <a href="/">Home</a>
-                <a href="/projects">Projects</a>
-                <a href="/music">Music</a>
-            </div>
-        </nav>
+      <nav aria-label="Main navigation">
+        <div class="nav-left">
+          <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
+          <div class="nav-social">
+            <a
+              href="https://github.com/AtlasICL"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="GitHub (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#github"></use></svg
+              ><span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emre-acarsoy"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="LinkedIn (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#linkedin"></use></svg
+              ><span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/music">Music</a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
+      <!-- Hero: the essentials at a glance -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <h2 id="hero-heading" class="hero-title">
+          Hi, I'm <span>Emre</span>, an aspiring software engineer.
+        </h2>
+        <p class="hero-lead">
+          Final-year Computer Science student at the University of Exeter, on
+          track for a First.
+          <strong>Software Engineering Intern at Cloudflare</strong> in 2026.
+          My skillset bridges low-level optimisation and production-scale
+          software development.
+        </p>
+        <ul class="hero-chips" aria-label="Main languages">
+          <li>C++</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+          <li>Java</li>
+        </ul>
+      </section>
 
-        <!-- Hero: the essentials at a glance -->
-        <section class="hero" aria-labelledby="hero-heading">
-            <h2 id="hero-heading" class="hero-title">Hi, I'm <span>Emre</span>, an aspiring software engineer.</h2>
-            <p class="hero-lead">
-                Final-year Computer Science student at the University of Exeter, on track for a First.
-                <strong>Software Engineering Intern at Cloudflare</strong> in 2026.
-                My skillset bridges low-level optimisation and production-scale software development.
-            </p>
-            <ul class="hero-chips" aria-label="Main languages">
-                <li>C++</li>
-                <li>Python</li>
-                <li>TypeScript</li>
-                <li>Java</li>
-            </ul>
-        </section>
+      <!-- Experience Section -->
+      <section id="experience" class="info-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Cloudflare | Software Engineering Intern</h3>
+          <p><b>06/2026 &ndash; 09/2026</b></p>
+          <ul>
+            <li>
+              Owned the end-to-end onboarding of two consumer-facing services
+              (Workers KV and Containers) onto Cloudflare's Maintenance
+              Coordination System (MCS), coordinating with service teams to
+              align requirements and resolve blockers.
+            </li>
+            <li>
+              Modelled both services' quorum constraints in TypeScript, backed
+              by unit and integration test suites, enabling MCS to
+              automatically block quorum-breaking maintenances.
+            </li>
+            <li>
+              Independently identified and closed a CLI bypass of timeframe
+              validation by moving checks into the API schema, ensuring
+              consistent enforcement across clients.
+            </li>
+            <li>
+              Diagnosed and fixed timezone-dependent bugs in the MCS test
+              suite, adding a regression harness.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="info-section">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Cloudflare | Software Engineering Intern</h3>
-                <p><b>06/2026 &ndash; 09/2026</b></p>
-                <ul>
-                    <li>Owned the end-to-end onboarding of two consumer-facing services (Workers KV and Containers) onto Cloudflare's Maintenance Coordination System (MCS), coordinating with service teams to align requirements and resolve blockers.</li>
-                    <li>Modelled both services' quorum constraints in TypeScript, backed by unit and integration test suites, enabling MCS to automatically block quorum-breaking maintenances.</li>
-                    <li>Independently identified and closed a CLI bypass of timeframe validation by moving checks into the API schema, ensuring consistent enforcement across clients.</li>
-                    <li>Diagnosed and fixed timezone-dependent bugs in the MCS test suite, adding a regression harness.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Featured projects -->
-        <section class="featured" aria-labelledby="featured-heading">
-            <h2 id="featured-heading">Featured projects</h2>
-            <div class="featured-grid">
-
-                <article class="feature-card">
-                    <div class="feature-visual">
-                        <div class="term term--whatdidi" aria-label="Example whatdidi usage">
-                            <div class="term-bar" aria-hidden="true"><span></span><span></span><span></span></div>
-<pre><code><span class="term-prompt">$</span> whatdidi --unique git 3
+      <!-- Featured projects -->
+      <section class="featured" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">Featured projects</h2>
+        <div class="featured-grid">
+          <article class="feature-card">
+            <div class="feature-visual">
+              <div
+                class="term term--whatdidi"
+                aria-label="Example whatdidi usage"
+              >
+                <div class="term-bar" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <pre><code><span class="term-prompt">$</span> whatdidi --unique git 3
 <span class="term-out">&gt; git push origin main
 &gt; git commit -m "feat: perf testing framework"
 &gt; git status</span>
 <span class="term-prompt">$</span> whatdidi curl 2
 <span class="term-out">&gt; curl -s https://sh.rustup.rs | sh
 &gt; curl -s https://api.github.com/users/AtlasICL | jq</span></code></pre>
-                        </div>
-                    </div>
-                    <h3>whatdidi</h3>
-                    <ul class="feature-points">
-                        <li>Custom shell history searcher for zsh and bash</li>
-                        <li>Written in pure bash</li>
-                        <li>50k lines parsed in 3ms (p99)</li>
-                        <li>Persistent user settings</li>
-                    </ul>
-                    <ul class="feature-stats">
-                        <li><strong>50k lines</strong><span>parsed in 3ms (p99)</span></li>
-                        <li><strong>bash &amp; zsh</strong><span>on macOS and Linux</span></li>
-                    </ul>
-                    <div class="feature-links">
-                        <a href="https://github.com/AtlasICL/whatdidi" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">&rarr;</span></a>
-                    </div>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-visual">
-                    <svg class="alloc-chart" viewBox="0 0 390 196" role="img"
-                        aria-label="Four containers with a 27 tonne limit. Dynamic programming fills each to 27.0 tonnes; a greedy approach reaches 24.2, 23.4, 23.3 and 22.7 tonnes.">
-                        <rect x="34" y="4" width="10" height="10" rx="2" class="ch-a" />
-                        <text x="49" y="13" class="ch-legend">Dynamic programming</text>
-                        <rect x="184" y="7" width="10" height="5" rx="1" class="ch-g" />
-                        <text x="199" y="13" class="ch-legend">Greedy</text>
-                        <line x1="334" y1="26" x2="334" y2="186" class="ch-limit" />
-                        <text x="334" y="196" class="ch-limit-label" text-anchor="middle">27 t limit</text>
-                        <text x="0" y="46" class="ch-label">#1</text>
-                        <rect x="34" y="34" width="153.4" height="16" rx="2" class="ch-a" />
-                        <rect x="189.4" y="34" width="144.6" height="16" rx="2" class="ch-b" />
-                        <text x="111.2" y="46" class="ch-in" text-anchor="middle">13.9 t</text>
-                        <text x="261.2" y="46" class="ch-in" text-anchor="middle">13.1 t</text>
-                        <rect x="34" y="54" width="268.9" height="6" rx="2" class="ch-g" />
-                        <text x="342" y="46" class="ch-val">27.0 t</text>
-                        <text x="342" y="61" class="ch-val-g">24.2 t</text>
-                        <text x="0" y="86" class="ch-label">#2</text>
-                        <rect x="34" y="74" width="150.1" height="16" rx="2" class="ch-a" />
-                        <rect x="186.1" y="74" width="147.9" height="16" rx="2" class="ch-b" />
-                        <text x="109.6" y="86" class="ch-in" text-anchor="middle">13.6 t</text>
-                        <text x="259.6" y="86" class="ch-in" text-anchor="middle">13.4 t</text>
-                        <rect x="34" y="94" width="260.0" height="6" rx="2" class="ch-g" />
-                        <text x="342" y="86" class="ch-val">27.0 t</text>
-                        <text x="342" y="101" class="ch-val-g">23.4 t</text>
-                        <text x="0" y="126" class="ch-label">#3</text>
-                        <rect x="34" y="114" width="114.6" height="16" rx="2" class="ch-a" />
-                        <rect x="150.6" y="114" width="183.4" height="16" rx="2" class="ch-b" />
-                        <text x="91.8" y="126" class="ch-in" text-anchor="middle">10.4 t</text>
-                        <text x="241.8" y="126" class="ch-in" text-anchor="middle">16.6 t</text>
-                        <rect x="34" y="134" width="258.9" height="6" rx="2" class="ch-g" />
-                        <text x="342" y="126" class="ch-val">27.0 t</text>
-                        <text x="342" y="141" class="ch-val-g">23.3 t</text>
-                        <text x="0" y="166" class="ch-label">#4</text>
-                        <rect x="34" y="154" width="120.1" height="16" rx="2" class="ch-a" />
-                        <rect x="156.1" y="154" width="177.9" height="16" rx="2" class="ch-b" />
-                        <text x="94.6" y="166" class="ch-in" text-anchor="middle">10.9 t</text>
-                        <text x="244.6" y="166" class="ch-in" text-anchor="middle">16.1 t</text>
-                        <rect x="34" y="174" width="252.2" height="6" rx="2" class="ch-g" />
-                        <text x="342" y="166" class="ch-val">27.0 t</text>
-                        <text x="342" y="181" class="ch-val-g">22.7 t</text>
-                    </svg>
-                    </div>
-                    <h3>Granite block allocator</h3>
-                    <ul class="feature-points">
-                        <li>Built for a client, currently in production</li>
-                        <li>Optimally packs granite blocks into containers</li>
-                        <li>Modelled as a 0/1 knapsack problem, vectorised with NumPy</li>
-                    </ul>
-                    <ul class="feature-stats">
-                        <li><strong>In production</strong><span>built for a client</span></li>
-                        <li><strong>+15%</strong><span>more load than greedy</span></li>
-                    </ul>
-                    <div class="feature-links">
-                        <a href="https://github.com/AtlasICL/granite_block_allocator" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">&rarr;</span></a>
-                    </div>
-                </article>
-
+              </div>
             </div>
-
-            <a href="/projects" class="projects-link">
-                <span class="projects-link-text">
-                    <span class="projects-link-title">View all projects</span>
-                    <span class="projects-link-sub">Systems tools, a 16-bit CPU, machine learning and more.</span>
-                </span>
-                <span class="projects-link-arrow" aria-hidden="true">&rarr;</span>
-            </a>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="info-section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>University of Exeter | BSc Computer Science</h3>
-                <p><b>Expected Graduation: 06/2027</b></p>
-                <ul>
-                    <li>Expected grade: <strong>71% - First-class honours</strong>.</li>
-                    <li>Dissertation: Supply chain attack detection and alert tool.</li>
-                    <li>Experience leading Agile teams through SDLC, including progress tracking on Jira.</li>
-                </ul>
-            </div>
-            <div class="education-item">
-                <h3>Imperial College London | BEng Electrical Engineering</h3>
-                <p><b>09/2022 &ndash; 07/2023</b></p>
-                <p><i>Degree not complete - transferred to Exeter for CS</i></p>
-                <ul>
-                    <li>Low-level programming in C++: Wrote custom versions of templated data structures including graphs, dynamic arrays, and AVL trees. Implemented relevant algorithms such as Kruskal's, Prim's, and Floyd-Warshall.</li>
-                    <li>Designed and simulated a <strong>16-bit CPU</strong>, with full arithmetic and control flow, including pipelining and interrupts.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="technical-skills" class="info-section">
-            <h2>Skills</h2>
-            <ul class="technical-list">
-                <li><strong>Languages:</strong> Python, C++, Java, TypeScript.</li>
-                <li><strong>Libraries:</strong> NumPy, pandas, matplotlib.</li>
-                <li><strong>Tools &amp; CI/CD:</strong> Git, GitHub Actions, GitLab CI/CD, Jira.</li>
-                <li><strong>Containerisation:</strong> Docker, Docker Compose.</li>
-                <li><strong>Observability:</strong> Prometheus, Grafana, Thanos.</li>
-                <li><strong>Databases:</strong> SQL / SQLite, Drizzle ORM, Cloudflare D1.</li>
+            <h3>whatdidi</h3>
+            <ul class="feature-points">
+              <li>Custom shell history searcher for zsh and bash</li>
+              <li>Written in pure bash</li>
+              <li>50k lines parsed in 3ms (p99)</li>
+              <li>Persistent user settings</li>
             </ul>
-
-            <h3 class="skills-subheading">Machine learning &amp; data science</h3>
-            <ul class="technical-list">
-                <li><strong>Classification:</strong> perceptron and logistic regression on MNIST and CIFAR-10.</li>
-                <li><strong>Clustering:</strong> k-means and DBSCAN.</li>
-                <li><strong>Dimensionality reduction:</strong> PCA, t-SNE and UMAP.</li>
+            <ul class="feature-stats">
+              <li>
+                <strong>50k lines</strong><span>parsed in 3ms (p99)</span>
+              </li>
+              <li>
+                <strong>bash &amp; zsh</strong><span>on macOS and Linux</span>
+              </li>
             </ul>
-        </section>
+            <div class="feature-links">
+              <a
+                href="https://github.com/AtlasICL/whatdidi"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
+          </article>
 
-        <!-- Soft skills + Languages, side by side on wider screens -->
-        <div class="home-split">
-            <!-- Soft skills Section -->
-            <section id="soft-skills" class="info-section">
-                <h2>Soft skills</h2>
-                <ul>
-                    <li><strong>Public speaking</strong>
-                        <ul>
-                            <li>Two-time host of LFCG Talent Show</li>
-                            <li>Musical performances with audience of 1000+</li>
-                        </ul>
-                    </li>
-                    <li><strong>Part-time work</strong>
-                        <ul>
-                            <li>3 years of part-time experience as a qualified tennis coach</li>
-                            <li>Independent tutoring in maths (French curriculum)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Languages Section -->
-            <section id="languages" class="info-section">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English (fluent)</li>
-                    <li>French (fluent)</li>
-                    <li>Turkish (fluent)</li>
-                    <li>Spanish (B1)</li>
-                </ul>
-            </section>
+          <article class="feature-card">
+            <div class="feature-visual">
+              <svg
+                class="alloc-chart"
+                viewBox="0 0 390 196"
+                role="img"
+                aria-label="Four containers with a 27 tonne limit. Dynamic programming fills each to 27.0 tonnes; a greedy approach reaches 24.2, 23.4, 23.3 and 22.7 tonnes."
+              >
+                <rect
+                  x="34"
+                  y="4"
+                  width="10"
+                  height="10"
+                  rx="2"
+                  class="ch-a"
+                />
+                <text x="49" y="13" class="ch-legend">
+                  Dynamic programming
+                </text>
+                <rect
+                  x="184"
+                  y="7"
+                  width="10"
+                  height="5"
+                  rx="1"
+                  class="ch-g"
+                />
+                <text x="199" y="13" class="ch-legend">Greedy</text>
+                <line x1="334" y1="26" x2="334" y2="186" class="ch-limit" />
+                <text
+                  x="334"
+                  y="196"
+                  class="ch-limit-label"
+                  text-anchor="middle"
+                >
+                  27 t limit
+                </text>
+                <text x="0" y="46" class="ch-label">#1</text>
+                <rect
+                  x="34"
+                  y="34"
+                  width="153.4"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="189.4"
+                  y="34"
+                  width="144.6"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="111.2" y="46" class="ch-in" text-anchor="middle">
+                  13.9 t
+                </text>
+                <text x="261.2" y="46" class="ch-in" text-anchor="middle">
+                  13.1 t
+                </text>
+                <rect
+                  x="34"
+                  y="54"
+                  width="268.9"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="46" class="ch-val">27.0 t</text>
+                <text x="342" y="61" class="ch-val-g">24.2 t</text>
+                <text x="0" y="86" class="ch-label">#2</text>
+                <rect
+                  x="34"
+                  y="74"
+                  width="150.1"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="186.1"
+                  y="74"
+                  width="147.9"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="109.6" y="86" class="ch-in" text-anchor="middle">
+                  13.6 t
+                </text>
+                <text x="259.6" y="86" class="ch-in" text-anchor="middle">
+                  13.4 t
+                </text>
+                <rect
+                  x="34"
+                  y="94"
+                  width="260.0"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="86" class="ch-val">27.0 t</text>
+                <text x="342" y="101" class="ch-val-g">23.4 t</text>
+                <text x="0" y="126" class="ch-label">#3</text>
+                <rect
+                  x="34"
+                  y="114"
+                  width="114.6"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="150.6"
+                  y="114"
+                  width="183.4"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="91.8" y="126" class="ch-in" text-anchor="middle">
+                  10.4 t
+                </text>
+                <text x="241.8" y="126" class="ch-in" text-anchor="middle">
+                  16.6 t
+                </text>
+                <rect
+                  x="34"
+                  y="134"
+                  width="258.9"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="126" class="ch-val">27.0 t</text>
+                <text x="342" y="141" class="ch-val-g">23.3 t</text>
+                <text x="0" y="166" class="ch-label">#4</text>
+                <rect
+                  x="34"
+                  y="154"
+                  width="120.1"
+                  height="16"
+                  rx="2"
+                  class="ch-a"
+                />
+                <rect
+                  x="156.1"
+                  y="154"
+                  width="177.9"
+                  height="16"
+                  rx="2"
+                  class="ch-b"
+                />
+                <text x="94.6" y="166" class="ch-in" text-anchor="middle">
+                  10.9 t
+                </text>
+                <text x="244.6" y="166" class="ch-in" text-anchor="middle">
+                  16.1 t
+                </text>
+                <rect
+                  x="34"
+                  y="174"
+                  width="252.2"
+                  height="6"
+                  rx="2"
+                  class="ch-g"
+                />
+                <text x="342" y="166" class="ch-val">27.0 t</text>
+                <text x="342" y="181" class="ch-val-g">22.7 t</text>
+              </svg>
+            </div>
+            <h3>Granite block allocator</h3>
+            <ul class="feature-points">
+              <li>Built for a client, currently in production</li>
+              <li>Optimally packs granite blocks into containers</li>
+              <li>
+                Modelled as a 0/1 knapsack problem, vectorised with NumPy
+              </li>
+            </ul>
+            <ul class="feature-stats">
+              <li>
+                <strong>In production</strong><span>built for a client</span>
+              </li>
+              <li><strong>+15%</strong><span>more load than greedy</span></li>
+            </ul>
+            <div class="feature-links">
+              <a
+                href="https://github.com/AtlasICL/granite_block_allocator"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub <span aria-hidden="true">&rarr;</span></a
+              >
+            </div>
+          </article>
         </div>
 
+        <a href="/projects" class="projects-link">
+          <span class="projects-link-text">
+            <span class="projects-link-title">View all projects</span>
+            <span class="projects-link-sub"
+              >Systems tools, a 16-bit CPU, machine learning and more.</span
+            >
+          </span>
+          <span class="projects-link-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </section>
 
+      <!-- Education Section -->
+      <section id="education" class="info-section">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>University of Exeter | BSc Computer Science</h3>
+          <p><b>Expected Graduation: 06/2027</b></p>
+          <ul>
+            <li>
+              Expected grade: <strong>71% - First-class honours</strong>.
+            </li>
+            <li>
+              Dissertation: Supply chain attack detection and alert tool.
+            </li>
+            <li>
+              Experience leading Agile teams through SDLC, including progress
+              tracking on Jira.
+            </li>
+          </ul>
+        </div>
+        <div class="education-item">
+          <h3>Imperial College London | BEng Electrical Engineering</h3>
+          <p><b>09/2022 &ndash; 07/2023</b></p>
+          <p><i>Degree not complete - transferred to Exeter for CS</i></p>
+          <ul>
+            <li>
+              Low-level programming in C++: Wrote custom versions of templated
+              data structures including graphs, dynamic arrays, and AVL trees.
+              Implemented relevant algorithms such as Kruskal's, Prim's, and
+              Floyd-Warshall.
+            </li>
+            <li>
+              Designed and simulated a <strong>16-bit CPU</strong>, with full
+              arithmetic and control flow, including pipelining and interrupts.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="technical-skills" class="info-section">
+        <h2>Skills</h2>
+        <ul class="technical-list">
+          <li><strong>Languages:</strong> Python, C++, Java, TypeScript.</li>
+          <li><strong>Libraries:</strong> NumPy, pandas, matplotlib.</li>
+          <li>
+            <strong>Tools &amp; CI/CD:</strong> Git, GitHub Actions, GitLab
+            CI/CD, Jira.
+          </li>
+          <li><strong>Containerisation:</strong> Docker, Docker Compose.</li>
+          <li><strong>Observability:</strong> Prometheus, Grafana, Thanos.</li>
+          <li>
+            <strong>Databases:</strong> SQL / SQLite, Drizzle ORM, Cloudflare
+            D1.
+          </li>
+        </ul>
+
+        <h3 class="skills-subheading">Machine learning &amp; data science</h3>
+        <ul class="technical-list">
+          <li>
+            <strong>Classification:</strong> perceptron and logistic regression
+            on MNIST and CIFAR-10.
+          </li>
+          <li><strong>Clustering:</strong> k-means and DBSCAN.</li>
+          <li>
+            <strong>Dimensionality reduction:</strong> PCA, t-SNE and UMAP.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Soft skills + Languages, side by side on wider screens -->
+      <div class="home-split">
+        <!-- Soft skills Section -->
+        <section id="soft-skills" class="info-section">
+          <h2>Soft skills</h2>
+          <ul>
+            <li>
+              <strong>Public speaking</strong>
+              <ul>
+                <li>Two-time host of LFCG Talent Show</li>
+                <li>Musical performances with audience of 1000+</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Part-time work</strong>
+              <ul>
+                <li>
+                  3 years of part-time experience as a qualified tennis coach
+                </li>
+                <li>Independent tutoring in maths (French curriculum)</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages" class="info-section">
+          <h2>Languages</h2>
+          <ul>
+            <li>English (fluent)</li>
+            <li>French (fluent)</li>
+            <li>Turkish (fluent)</li>
+            <li>Spanish (B1)</li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="GitHub (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="LinkedIn (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                </a>
-            </div>
-            <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="social-links">
+          <a
+            href="https://github.com/AtlasICL"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="GitHub (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#github"></use></svg
+            ><span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emre-acarsoy"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="LinkedIn (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#linkedin"></use></svg
+            ><span>LinkedIn</span>
+          </a>
         </div>
+        <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
-</body>
-
+  </body>
 </html>

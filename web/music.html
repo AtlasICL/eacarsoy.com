@@ -1,242 +1,466 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- Ensures proper rendering on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music | Emre Acarsoy</title>
-    <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="fonts/ibm-plex-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/hanken-grotesk-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/slideshow.css" />
     <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
     <meta name="description" content="Emre Acarsoy's musical performances" />
     <meta property="og:title" content="Music | Emre Acarsoy" />
-    <meta property="og:description" content="Musical performances by Emre Acarsoy" />
+    <meta
+      property="og:description"
+      content="Musical performances by Emre Acarsoy"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eacarsoy.com/music" />
     <meta property="og:site_name" content="Emre Acarsoy" />
-    <meta property="og:image" content="https://eacarsoy.com/img/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://eacarsoy.com/img/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare." />
+    <meta
+      property="og:image:alt"
+      content="Emre Acarsoy: software engineer graduating in 2027. Computer Science at University of Exeter, Software Engineering Intern at Cloudflare."
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://eacarsoy.com/music" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation Bar -->
     <header>
-        <nav aria-label="Main navigation">
-            <div class="nav-left">
-                <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
-                <div class="nav-social">
-                    <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="GitHub (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                        aria-label="LinkedIn (opens in new tab)">
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-right">
-                <a href="/">Home</a>
-                <a href="/projects">Projects</a>
-                <a href="/music">Music</a>
-            </div>
-        </nav>
+      <nav aria-label="Main navigation">
+        <div class="nav-left">
+          <h1><a href="/" class="nav-home">Emre Acarsoy</a></h1>
+          <div class="nav-social">
+            <a
+              href="https://github.com/AtlasICL"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="GitHub (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#github"></use></svg
+              ><span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emre-acarsoy"
+              target="_blank"
+              rel="noopener"
+              class="nav-social-btn"
+              aria-label="LinkedIn (opens in new tab)"
+            >
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#linkedin"></use></svg
+              ><span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/music">Music</a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Music Section -->
-        <section id="music" class="info-section" aria-labelledby="music-heading">
-            <h2 id="music-heading">Music</h2>
+      <!-- Music Section -->
+      <section id="music" class="info-section" aria-labelledby="music-heading">
+        <h2 id="music-heading">Music</h2>
 
-            <div class="section-intro">
-                <p>
-                    As a pianist and music theory enthusiast, performing music live has been a big part of my life. 
-                    From hosting shows to leading my own band (Les petites Mouettes), performing has helped me grow as a musician and as a person.
-                    Below you will find some highlights from my musical journey.
-                </p>
+        <div class="section-intro">
+          <p>
+            As a pianist and music theory enthusiast, performing music live has
+            been a big part of my life. From hosting shows to leading my own
+            band (Les petites Mouettes), performing has helped me grow as a
+            musician and as a person. Below you will find some highlights from
+            my musical journey.
+          </p>
+        </div>
+
+        <!-- Tabernacle Show -->
+        <article class="project-item">
+          <div class="project-content">
+            <h3>Tabernacle Show - Les petites Mouettes</h3>
+            <a
+              href="https://www.youtube.com/watch?v=0kUy7KP3cuo"
+              target="_blank"
+              rel="noopener"
+              >Watch part of our performance on YouTube</a
+            >
+            <p>
+              We had the great pleasure of performing to an audience of over
+              1000 people at the Tabernacle in Notting Hill. Built in 1887 as a
+              church, it is today a Grade II listed building. It was a great
+              experience to perform in such a beautiful and historic venue.
+            </p>
+          </div>
+          <div class="project-images">
+            <div
+              class="slideshow-wrapper"
+              tabindex="0"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Tabernacle Show - Les petites Mouettes photos"
+            >
+              <button class="prev" aria-label="Previous photo">
+                &#10094;
+              </button>
+              <button class="next" aria-label="Next photo">&#10095;</button>
+
+              <div class="slideshow-container" aria-live="polite">
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/tabernacle/final_speech_emre.webp"
+                    width="1200"
+                    height="800"
+                    alt="End of performance, Emre gives a thank you speech"
+                    fetchpriority="high"
+                  />
+                </div>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/tabernacle/performance_emre_front.webp"
+                    width="1060"
+                    height="1047"
+                    alt="Performance (Emre singing)"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/tabernacle/final_celebrations.webp"
+                    width="1200"
+                    height="1200"
+                    alt="End of performance final celebrations"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="dots-container">
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 1"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 2"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 3"
+                ></button>
+              </div>
             </div>
+          </div>
+        </article>
 
-            <!-- Tabernacle Show -->
-            <article class="project-item">
-                <div class="project-content">
-                    <h3>Tabernacle Show - Les petites Mouettes</h3>
-                    <a href="https://www.youtube.com/watch?v=0kUy7KP3cuo" target="_blank" rel="noopener">Watch part of our performance on YouTube</a>
-                    <p>
-                        We had the great pleasure of performing to an audience of over 1000 people at the Tabernacle in Notting Hill. 
-                        Built in 1887 as a church, it is today a Grade II listed building. It was a great experience to perform in such a beautiful and historic venue.
-                    </p>
+        <!-- LFCG Talent Show 2022 -->
+        <article class="project-item">
+          <div class="project-content">
+            <h3>Hosting the LFCG Talent Show - 2022 edition</h3>
+            <a
+              href="https://www.youtube.com/watch?v=OHOeyzsR1tk&amp;t=300"
+              target="_blank"
+              rel="noopener"
+              >Watch on YouTube</a
+            >
+            <p>
+              This was my first time hosting the LFCG Talent Show. I love
+              public speaking and performing, and being able to work closely
+              with so many talented students along with the prestigious jury
+              members was a great experience.
+            </p>
+            <p>
+              On the second day of the show, my band Les petites Mouettes (The
+              Little Seagulls) performed a couple of songs. Here are some
+              photos from that evening.
+            </p>
+          </div>
+          <div class="project-images">
+            <div
+              class="slideshow-wrapper"
+              tabindex="0"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Hosting the LFCG Talent Show - 2022 edition photos"
+            >
+              <button class="prev" aria-label="Previous photo">
+                &#10094;
+              </button>
+              <button class="next" aria-label="Next photo">&#10095;</button>
+
+              <div class="slideshow-container" aria-live="polite">
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2022/final_emre_hosting.webp"
+                    width="1200"
+                    height="800"
+                    alt="Emre hosting the show"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="project-images">
-                    <div class="slideshow-wrapper" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Tabernacle Show - Les petites Mouettes photos">
-                        <button class="prev" aria-label="Previous photo">&#10094;</button>
-                        <button class="next" aria-label="Next photo">&#10095;</button>
-
-                        <div class="slideshow-container" aria-live="polite">
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/tabernacle/final_speech_emre.webp" width="1200" height="800" alt="End of performance, Emre gives a thank you speech" fetchpriority="high" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/tabernacle/performance_emre_front.webp" width="1060" height="1047" alt="Performance (Emre singing)" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/tabernacle/final_celebrations.webp" width="1200" height="1200" alt="End of performance final celebrations" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <div class="dots-container">
-                            <button type="button" class="dot" aria-label="Show photo 1"></button>
-                            <button type="button" class="dot" aria-label="Show photo 2"></button>
-                            <button type="button" class="dot" aria-label="Show photo 3"></button>
-                        </div>
-                    </div>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2022/emre_hosting_other_night.webp"
+                    width="1200"
+                    height="799"
+                    alt="Emre hosting the other night of the show"
+                    loading="lazy"
+                  />
                 </div>
-            </article>
-
-            <!-- LFCG Talent Show 2022 -->
-            <article class="project-item">
-                <div class="project-content">
-                    <h3>Hosting the LFCG Talent Show - 2022 edition</h3>
-                    <a href="https://www.youtube.com/watch?v=OHOeyzsR1tk&amp;t=300" target="_blank" rel="noopener">Watch on YouTube</a>
-                    <p>
-                        This was my first time hosting the LFCG Talent Show. 
-                        I love public speaking and performing, and being able to work closely with so many talented students along with the prestigious jury members was a great experience.
-                    </p>
-                    <p>
-                        On the second day of the show, my band Les petites Mouettes (The Little Seagulls) performed a couple of songs. Here are some photos from that evening.
-                    </p>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2022/talent_show_programme.webp"
+                    width="1200"
+                    height="800"
+                    alt="Programme of the show"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="project-images">
-                    <div class="slideshow-wrapper" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Hosting the LFCG Talent Show - 2022 edition photos">
-                        <button class="prev" aria-label="Previous photo">&#10094;</button>
-                        <button class="next" aria-label="Next photo">&#10095;</button>
+              </div>
 
-                        <div class="slideshow-container" aria-live="polite">
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2022/final_emre_hosting.webp" width="1200" height="800" alt="Emre hosting the show" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2022/emre_hosting_other_night.webp" width="1200" height="799" alt="Emre hosting the other night of the show" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2022/talent_show_programme.webp" width="1200" height="800" alt="Programme of the show" loading="lazy" />
-                            </div>
-                        </div>
+              <div class="dots-container">
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 1"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 2"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </article>
 
-                        <div class="dots-container">
-                            <button type="button" class="dot" aria-label="Show photo 1"></button>
-                            <button type="button" class="dot" aria-label="Show photo 2"></button>
-                            <button type="button" class="dot" aria-label="Show photo 3"></button>
-                        </div>
-                    </div>
+        <!-- LFCG Talent Show 2023 -->
+        <article class="project-item">
+          <div class="project-content">
+            <h3>Hosting the LFCG Talent Show - 2023 edition</h3>
+            <p>
+              I was invited back to host the 2023 edition of the LFCG Talent
+              Show. The event was even more successful than the previous year,
+              with a wide variety of talented performers and a packed audience.
+            </p>
+          </div>
+          <div class="project-images">
+            <div
+              class="slideshow-wrapper"
+              tabindex="0"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Hosting the LFCG Talent Show - 2023 edition photos"
+            >
+              <button class="prev" aria-label="Previous photo">
+                &#10094;
+              </button>
+              <button class="next" aria-label="Next photo">&#10095;</button>
+
+              <div class="slideshow-container" aria-live="polite">
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2023/emre_hosting_2023.webp"
+                    width="1000"
+                    height="786"
+                    alt="Emre hosting the show"
+                    loading="lazy"
+                  />
                 </div>
-            </article>
-
-
-            <!-- LFCG Talent Show 2023 -->
-            <article class="project-item">
-                <div class="project-content">
-                    <h3>Hosting the LFCG Talent Show - 2023 edition</h3>
-                    <p>
-                        I was invited back to host the 2023 edition of the LFCG Talent Show. 
-                        The event was even more successful than the previous year, with a wide variety of talented performers and a packed audience.
-                    </p>
-                    
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2023/saults.webp"
+                    width="1200"
+                    height="800"
+                    alt="The band Saults"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="project-images">
-                    <div class="slideshow-wrapper" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Hosting the LFCG Talent Show - 2023 edition photos">
-                        <button class="prev" aria-label="Previous photo">&#10094;</button>
-                        <button class="next" aria-label="Next photo">&#10095;</button>
-
-                        <div class="slideshow-container" aria-live="polite">
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2023/emre_hosting_2023.webp" width="1000" height="786" alt="Emre hosting the show" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2023/saults.webp" width="1200" height="800" alt="The band Saults" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/talent_show_2023/final_thanks.webp" width="1200" height="800" alt="Final thanks" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <div class="dots-container">
-                            <button type="button" class="dot" aria-label="Show photo 1"></button>
-                            <button type="button" class="dot" aria-label="Show photo 2"></button>
-                            <button type="button" class="dot" aria-label="Show photo 3"></button>
-                        </div>
-                    </div>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/talent_show_2023/final_thanks.webp"
+                    width="1200"
+                    height="800"
+                    alt="Final thanks"
+                    loading="lazy"
+                  />
                 </div>
-            </article>
+              </div>
 
+              <div class="dots-container">
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 1"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 2"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 3"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </article>
 
-            <!-- Outdoor concert -->
-            <article class="project-item">
-                <div class="project-content">
-                    <h3>Outdoor live performance - Les petites Mouettes</h3>
-                    <a href="https://www.youtube.com/watch?v=ucAZTmLSkKo" target="_blank" rel="noopener">Watch on YouTube</a>
-                    <p>
-                        This was a very fun and light-hearted performance at the Lycée Français Charles de Gaulle by my band Les petites Mouettes.
-                        We performed several original songs and covers to an enthusiastic audience of students and teachers.
-                    </p>
-                    
+        <!-- Outdoor concert -->
+        <article class="project-item">
+          <div class="project-content">
+            <h3>Outdoor live performance - Les petites Mouettes</h3>
+            <a
+              href="https://www.youtube.com/watch?v=ucAZTmLSkKo"
+              target="_blank"
+              rel="noopener"
+              >Watch on YouTube</a
+            >
+            <p>
+              This was a very fun and light-hearted performance at the Lycée
+              Français Charles de Gaulle by my band Les petites Mouettes. We
+              performed several original songs and covers to an enthusiastic
+              audience of students and teachers.
+            </p>
+          </div>
+          <div class="project-images">
+            <div
+              class="slideshow-wrapper"
+              tabindex="0"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Outdoor live performance - Les petites Mouettes photos"
+            >
+              <button class="prev" aria-label="Previous photo">
+                &#10094;
+              </button>
+              <button class="next" aria-label="Next photo">&#10095;</button>
+
+              <div class="slideshow-container" aria-live="polite">
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/outdoor/action_pic.webp"
+                    width="1200"
+                    height="667"
+                    alt="Emre in front of the large crowd"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="project-images">
-                    <div class="slideshow-wrapper" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Outdoor live performance - Les petites Mouettes photos">
-                        <button class="prev" aria-label="Previous photo">&#10094;</button>
-                        <button class="next" aria-label="Next photo">&#10095;</button>
-
-                        <div class="slideshow-container" aria-live="polite">
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/outdoor/action_pic.webp" width="1200" height="667" alt="Emre in front of the large crowd" loading="lazy" />
-                            </div>
-                            <div class="slide fade">
-                                <img decoding="async" src="img/music/outdoor/audience_photo.webp" width="750" height="578" alt="Photo taken by an audience member" loading="lazy" />
-                            </div>
-                        </div>
-
-                        <div class="dots-container">
-                            <button type="button" class="dot" aria-label="Show photo 1"></button>
-                            <button type="button" class="dot" aria-label="Show photo 2"></button>
-                        </div>
-                    </div>
+                <div class="slide fade">
+                  <img
+                    decoding="async"
+                    src="img/music/outdoor/audience_photo.webp"
+                    width="750"
+                    height="578"
+                    alt="Photo taken by an audience member"
+                    loading="lazy"
+                  />
                 </div>
-            </article>
+              </div>
 
-        </section>
+              <div class="dots-container">
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 1"
+                ></button>
+                <button
+                  type="button"
+                  class="dot"
+                  aria-label="Show photo 2"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://github.com/AtlasICL" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="GitHub (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#github"></use></svg><span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/emre-acarsoy" target="_blank" rel="noopener" class="nav-social-btn"
-                    aria-label="LinkedIn (opens in new tab)">
-                    <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#linkedin"></use></svg><span>LinkedIn</span>
-                </a>
-            </div>
-            <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="social-links">
+          <a
+            href="https://github.com/AtlasICL"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="GitHub (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#github"></use></svg
+            ><span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emre-acarsoy"
+            target="_blank"
+            rel="noopener"
+            class="nav-social-btn"
+            aria-label="LinkedIn (opens in new tab)"
+          >
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="img/icons.svg#linkedin"></use></svg
+            ><span>LinkedIn</span>
+          </a>
         </div>
+        <p>© 2026 Emre Acarsoy. All rights reserved.</p>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="js/script.js" defer></script>
-    
+
     <!-- Slideshow JavaScript -->
     <script src="js/slideshow.js" defer></script>
-</body>
-
-</html> 
+  </body>
+</html>

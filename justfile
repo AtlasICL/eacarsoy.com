@@ -1,4 +1,4 @@
-oxfmt_file_types := "'**/*.{js,mjs,cjs,json,jsonc,yaml,yml,md}'"
+oxfmt_file_types := "'**/*.{js,mjs,cjs,json,jsonc,yaml,yml,md,css,html}'"
 
 default:
     @just --list
