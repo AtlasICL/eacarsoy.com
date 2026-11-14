@@ -466,7 +466,7 @@ main {
 
 .info-section ul li::before {
   content: "•";
-  color: var(--primary-color);
+  color: var(--heading-color);
   position: absolute;
   left: 0;
 }
@@ -1275,7 +1275,7 @@ nav h1 a.nav-home:focus-visible {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background-color: var(--primary-color);
+  background-color: var(--heading-color);
 }
 
 .feature-stats {
@@ -1359,7 +1359,7 @@ nav h1 a.nav-home:focus-visible {
 }
 
 .term-prompt {
-  color: var(--primary-color);
+  color: var(--heading-color);
 }
 
 .term-out {
