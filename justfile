@@ -9,10 +9,11 @@ fix:
     npx oxfmt --no-error-on-unmatched-pattern {{oxfmt_file_types}}
     npx oxlint --deny-warnings --no-error-on-unmatched-pattern
 
-# Check linting and formatting (read-only)
+# Check linting, formatting and live domain redirects (read-only)
 check:
     npx oxlint --deny-warnings --no-error-on-unmatched-pattern
     npx oxfmt --check --no-error-on-unmatched-pattern {{oxfmt_file_types}}
+    ./scripts/check_redirects.sh
 
 # Serve the site locally the way Cloudflare will
 dev:
