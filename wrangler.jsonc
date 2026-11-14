@@ -15,8 +15,5 @@
   },
   "workers_dev": false,
   "preview_urls": false,
-  "routes": [
-    { "pattern": "eacarsoy.com", "custom_domain": true },
-    { "pattern": "www.eacarsoy.com", "custom_domain": true },
-  ],
+  "routes": [{ "pattern": "eacarsoy.com", "custom_domain": true }],
 }
