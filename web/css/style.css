@@ -25,6 +25,11 @@
 
 /* Custom Properties */
 :root {
+  /* Page width, shared by the nav, main content and footer */
+  --page-width: 1120px;
+  --page-gutter: 2.5rem;
+  --grid-gap: 1.75rem;
+
   /* Palette: orange for titles and hover states, teal for highlighted phrases, on teal-tinted darks */
   --primary-color: #ff8a1f;
   --hover-color: #ffa24d;
@@ -207,8 +212,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
-  max-width: 1000px;
+  padding: 0 var(--page-gutter);
+  max-width: var(--page-width);
   margin: 0 auto;
 }
 
@@ -310,8 +315,8 @@ nav h1 {
 
 /* Main Content */
 main {
-  padding: 2rem;
-  max-width: 1000px;
+  padding: 2.5rem var(--page-gutter);
+  max-width: var(--page-width);
   margin: 0 auto;
 }
 
@@ -331,8 +336,8 @@ main {
 /* Info Section (Education, Projects, etc.) */
 .info-section {
   border: 1px solid var(--border-color);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
   border-radius: var(--radius);
   background-color: var(--card-color);
 }
@@ -489,7 +494,7 @@ footer {
 }
 
 .footer-content {
-  max-width: 1000px;
+  max-width: var(--page-width);
   margin: 0 auto;
 }
 
@@ -594,6 +599,10 @@ footer {
     padding: 1rem;
   }
 
+  :root {
+    --grid-gap: 1.25rem;
+  }
+
   .technical-list {
     grid-template-columns: 1fr;
   }
@@ -674,7 +683,7 @@ footer {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: var(--grid-gap);
   margin-top: 1rem;
 }
 
@@ -1126,8 +1135,8 @@ nav h1 a.nav-home:focus-visible {
 .home-split {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: var(--grid-gap);
+  margin-bottom: 2.5rem;
 }
 
 .home-split > .info-section {
@@ -1156,7 +1165,7 @@ nav h1 a.nav-home:focus-visible {
   ---------------
 */
 .hero {
-  padding: 1.5rem 0 2.5rem;
+  padding: 1.5rem 0 3rem;
 }
 
 .hero-title {
@@ -1201,7 +1210,7 @@ nav h1 a.nav-home:focus-visible {
 
 /* Featured projects */
 .featured {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .featured > h2 {
@@ -1211,9 +1220,9 @@ nav h1 a.nav-home:focus-visible {
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 1.25rem;
+  column-gap: var(--grid-gap);
   row-gap: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--grid-gap);
 }
 
 /* Each card spans the same five rows (visual, title, text, stats, link),
