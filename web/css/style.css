@@ -458,6 +458,11 @@ main {
   margin-bottom: 0.3rem;
 }
 
+/* Imperial College: keep the dates and the note under them together */
+.imperial-dates {
+  margin-bottom: 0.3rem;
+}
+
 .info-section ul {
   list-style: none;
   padding-left: 1rem;
